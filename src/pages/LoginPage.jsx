@@ -1,4 +1,3 @@
-
 import  { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
@@ -49,19 +48,27 @@ const LoginPage = () => {
         <Col md={6} className="login-form">
           <h2 className="mb-4">Log in to your Account</h2>
 
-          {/* Google Login Button */}
-          <Button
-            variant="outline-danger"
-            onClick={handleGoogleLogin}
-            className="mb-3 d-flex align-items-center google-login-button"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-              alt="Google Logo"
-              className="google-logo me-2"
-            />
-            Login with Google
-          </Button>
+          {/* Google Login Button (centered horizontally) */}
+      <div className="d-flex justify-content-center mb-3">
+        <Button
+          variant="outline-danger"
+          onClick={handleGoogleLogin}
+          className="d-flex align-items-center google-login-button"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+            alt="Google Logo"
+            className="google-logo me-2"
+          />
+          Login with Google
+        </Button>
+      </div>
+
+      {/* Additional text or content below the button */}
+      <div className="text-center">
+        <p>atau</p>
+      </div>
+
 
           <Form onSubmit={handleLogin}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
@@ -88,9 +95,11 @@ const LoginPage = () => {
             <p className="text-end mt-2">
               <a href="#">Forgot Password?</a>
             </p>
+            <div className="d-flex justify-content-center align-items-center">
             <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
               Login
             </Button>
+          </div>
 
             {/* Register below the login button */}
             <p className="mt-3">
