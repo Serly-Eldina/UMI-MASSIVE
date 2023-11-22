@@ -66,3 +66,154 @@ body, html {
   width: 20px; /* Adjust the width as needed */
 }
 /* CSS LOGIN */
+
+/* INI ADALAH TAGAR PEMBUKA CSS HOMEPAGE*/
+
+/* BAGIAN 1  */
+  .container1{
+    height: 560px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    }
+
+    .container2{
+    width: 60%;
+    margin-left: 130px;
+    margin-top: 60px;
+    }
+
+  .container2 p:nth-child(1) {
+    font-weight: bold;
+    font-size: 35px;
+    color: #044F1E;
+    margin: 0;
+    }
+
+  .container2 p:nth-child(2){
+    font-weight: bold;
+    font-size: 35px;
+    color: #044F1E;
+    margin-bottom: 50px;
+    }
+
+  .container2 p:nth-child(3), .container2 p:nth-child(4),  .container2 p:nth-child(5),  .container2 p:nth-child(6) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #373737;
+    margin: 0;
+    }
+
+  .container2 p:nth-child(6){
+    margin-bottom: 60px;
+  }
+
+  .container3{
+    width: 40%;
+    margin-right: 70px;
+    }
+
+  .container3 img{
+    width: 450px;
+    height: 450px;
+    }
+
+/* BAGIAN 2 */
+  .rencana{
+   
+    width: 100%;
+    height: 560px;
+  }
+
+  .judul p:nth-child(1){
+    font-weight: bold;
+      font-size: 28px;
+      color: #044F1E;
+      margin: 0;
+      text-align: center;
+
+  }
+
+  .judul p:nth-child(2){
+    font-weight: 450;
+      font-size: 15px;
+      color: #044F1E;
+      margin-top: 8px;
+      text-align: center;
+  }
+
+  .isi{
+    display: flex;
+    margin-top: 80px;
+   
+  }
+
+  .isi1 {
+    text-align: center;
+    margin-left: 190px;
+  }
+
+  .isi2 {
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .isi3 {
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .textrencana{
+    font-size: small;
+  }
+
+  /* BAGIAN 3 */
+  .nutrisi{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  .gambarnutrisi{
+    margin-left: 110px;
+  }
+
+  .textnutrisi{
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+  .judulnutrisi{
+    font-weight: bolder;
+    color: #044F1E;
+    font-size: 25px;
+  }
+
+  .listnutrisi{
+    width: 500px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #242424;
+  }
+
+.gabung{
+  margin-top: 100px;
+  display: flex;
+  height: 500px;
+}
+
+/* BAGIAN ARTIKEL */
+
+.artikel p:nth-child(1){
+font-weight: bolder;
+font-size: 32px;
+color: #044F1E;
+margin-left: 70px;
+margin-top: 30px;
+}
+
+.artikel1{
+  display: flex;
+  height: 700px;
+}
+/* INI ADALAH TAGAR PENUTUP CSS HOMEPAGE*/
