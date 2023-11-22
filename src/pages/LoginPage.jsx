@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 
@@ -12,7 +12,7 @@ const LoginPage = () => {
     console.log('Email:', email);
     console.log('Password:', password);
   };
-//comentar
+
   useEffect(() => {
     // Load the Google API for sign-in
     const script = document.createElement('script');
@@ -45,30 +45,29 @@ const LoginPage = () => {
     <Container className="login-container">
       <Row className="login-content">
         {/* Login Form on the Left */}
-        <Col md={6} className="login-form">
+        <Col md={5} className="login-form">
           <h2 className="mb-4">Log in to your Account</h2>
 
           {/* Google Login Button (centered horizontally) */}
-      <div className="d-flex justify-content-center mb-3">
-        <Button
-          variant="outline-danger"
-          onClick={handleGoogleLogin}
-          className="d-flex align-items-center google-login-button"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-            alt="Google Logo"
-            className="google-logo me-2"
-          />
-          Login with Google
-        </Button>
-      </div>
+          <div className="d-flex justify-content-center mb-3">
+            <Button
+              variant="outline-danger"
+              onClick={handleGoogleLogin}
+              className="d-flex align-items-center google-login-button"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                alt="Google Logo"
+                className="google-logo me-2"
+              />
+              Login with Google
+            </Button>
+          </div>
 
-      {/* Additional text or content below the button */}
-      <div className="text-center">
-        <p>atau</p>
-      </div>
-
+          {/* Additional text or content below the button */}
+          <div className="text-center">
+            <p>atau</p>
+          </div>
 
           <Form onSubmit={handleLogin}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
@@ -96,22 +95,21 @@ const LoginPage = () => {
               <a href="#">Forgot Password?</a>
             </p>
             <div className="d-flex justify-content-center align-items-center">
-            <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
-              Login
-            </Button>
-          </div>
+              <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
+                Login
+              </Button>
+            </div>
 
             {/* Register below the login button */}
-            <p className="mt-3">
-              Don,t have an account? <a href="#">Register</a>
+            <p className="mt-3 text-center">
+              Don't have an account? <a href="#">Register</a>
             </p>
           </Form>
         </Col>
 
         {/* Image on the Right */}
-        
         <Col md={6} className="login-image text-center">
-        <img
+          <img
             src={fotologin}
             alt="Login Image"
             className="img-fluid"
@@ -122,6 +120,4 @@ const LoginPage = () => {
   );
 };
 
-
-
-export default LoginPage
+export default LoginPage;
