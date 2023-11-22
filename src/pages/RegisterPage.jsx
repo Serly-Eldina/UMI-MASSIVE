@@ -1,7 +1,8 @@
 
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
+import logologin from '../images/logologin.png';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -45,31 +46,38 @@ const LoginPage = () => {
   return (
     <Container className="login-container">
       <Row className="login-content">
+
         {/* Login Form on the Left */}
-        <Col md={6} className="login-form">
+        <Col md={6} className="login-form d-flex flex-column align-items-center justify-content-center">
+          <img
+            src={logologin}
+            alt="Login Image"
+            style={{ width: '90px', height: '60px' }}
+            className="mb-4"
+          />
           <h2 className="mb-4">Log in to your Account</h2>
 
           {/* Google Login Button */}
           <div className="d-flex justify-content-center mb-3">
-          <Button
-            variant="outline-danger"
-            onClick={handleGoogleLogin}
-            className="mb-3 d-flex align-items-center google-login-button"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-              alt="Google Logo"
-              className="google-logo me-2"
-            />
-            Login with Google
-          </Button>
+            <Button
+              variant="outline-danger"
+              onClick={handleGoogleLogin}
+              className="mb-3 d-flex align-items-center google-login-button"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                alt="Google Logo"
+                className="google-logo me-2"
+              />
+              Login with Google
+            </Button>
           </div>
 
           <div className="text-center">
             <p>atau</p>
           </div>
           <Form onSubmit={handleLogin}>
-          <Form.Group className="text-start mb-3" controlId="formBasicEmail">
+            <Form.Group className="text-start mb-3" controlId="formBasicEmail">
               <Form.Label>Nama Lengkap</Form.Label>
               <Form.Control
                 type="name"
@@ -98,10 +106,7 @@ const LoginPage = () => {
               />
             </Form.Group>
 
-            {/* Forgot Password on the right */}
-            {/* <p className="text-end mt-2">
-              <a href="#">Forgot Password?</a>
-            </p> */}
+
             <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
               Sign Up
             </Button>
@@ -114,9 +119,9 @@ const LoginPage = () => {
         </Col>
 
         {/* Image on the Right */}
-        
+
         <Col md={6} className="login-image height-20px">
-        <img
+          <img
             src={fotologin}
             alt="Login Image"
             className="img-fluid"

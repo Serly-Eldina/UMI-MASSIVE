@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
+import logologin from '../images/logologin.png';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -45,7 +46,13 @@ const LoginPage = () => {
     <Container className="login-container">
       <Row className="login-content">
         {/* Login Form on the Left */}
-        <Col md={5} className="login-form">
+        <Col md={6} className="login-form d-flex flex-column align-items-center justify-content-center">
+          <img
+            src={logologin}
+            alt="Login Image"
+            style={{ width: '90px', height: '60px' }}
+            className="mb-4"
+          />
           <h2 className="mb-4">Log in to your Account</h2>
 
           {/* Google Login Button (centered horizontally) */}

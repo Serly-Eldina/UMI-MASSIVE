@@ -18,6 +18,7 @@ import peony from '../images/peony.png';
 import sepatu from '../images/bungasepatu.png';
 import user from '../images/user.png'
 import logosementara from '../assets/logosementara.png'
+import logonav from '../images/logonav.png'
 
 
 
@@ -27,34 +28,38 @@ const Home = () => {
   return (
     <>
       <NavbarBS expand="lg" className="bg-body-tertiary">
-        <Container fluid>
-          <NavbarBS.Brand ><img src={logosementara} alt='logo' /></NavbarBS.Brand>
-          <NavbarBS.Toggle aria-controls="navbarScroll" />
-          <NavbarBS.Collapse id="navbarScroll">
-            <Nav
-              className="navbar-custom me-auto my-2 my-lg-0"
-              style={{ maxHeight: 'auto' }}
-              navbarScroll
-            >
+  <Container fluid>
+    <NavbarBS.Brand>
+      <img src={logonav} alt='logo' style={{width: '90px', height: '60px', paddingBottom:'20px'}} />
+    </NavbarBS.Brand>
+    <NavbarBS.Toggle aria-controls="navbarScroll" />
+    <NavbarBS.Collapse id="navbarScroll">
+      <Nav
+        className="navbar-custom me-auto my-2 my-lg-0"
+        style={{ maxHeight: 'auto' }}
+        navbarScroll
+      >
+        <Nav.Link href="/">Beranda</Nav.Link>
+        <Nav.Link href="Login">Tentang Kami</Nav.Link>
+        <Nav.Link href="Register">Informasi</Nav.Link>
+        <Nav.Link href="#action2">Konsultasi</Nav.Link>
+      </Nav>
+      <Form className="d-flex" style={{ marginRight: '20px' }}>
+        <Form.Control
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
+      </Form>
+      <NavbarBS.Brand>
+        <img src={logosementara} alt='logo' />
+      </NavbarBS.Brand>
+    </NavbarBS.Collapse>
+  </Container>
+</NavbarBS>
 
-              <Nav.Link href="/">Beranda</Nav.Link>
-              <Nav.Link href="Login">Tentang Kami</Nav.Link>
-              <Nav.Link href="Register">Informasi</Nav.Link>
-              <Nav.Link href="#action2">Konsultasi</Nav.Link>
-
-            </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-          </NavbarBS.Collapse>
-        </Container>
-      </NavbarBS>
 
       <div className='container1'>
         <div className='container2'>
