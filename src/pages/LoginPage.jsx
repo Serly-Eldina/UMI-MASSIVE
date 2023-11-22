@@ -94,15 +94,15 @@ const LoginPage = () => {
             <p className="text-end mt-2">
               <a href="#">Forgot Password?</a>
             </p>
-            <div className="d-flex justify-content-center align-items-center">
+            
               <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
                 Login
               </Button>
-            </div>
+           
 
             {/* Register below the login button */}
             <p className="mt-3 text-center">
-              Don't have an account? <a href="#">Register</a>
+              Belum Punya Akun? <a href="#">Register</a>
             </p>
           </Form>
         </Col>

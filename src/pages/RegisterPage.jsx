@@ -50,6 +50,7 @@ const LoginPage = () => {
           <h2 className="mb-4">Log in to your Account</h2>
 
           {/* Google Login Button */}
+          <div className="d-flex justify-content-center mb-3">
           <Button
             variant="outline-danger"
             onClick={handleGoogleLogin}
@@ -62,8 +63,21 @@ const LoginPage = () => {
             />
             Login with Google
           </Button>
+          </div>
 
+          <div className="text-center">
+            <p>atau</p>
+          </div>
           <Form onSubmit={handleLogin}>
+          <Form.Group className="text-start mb-3" controlId="formBasicEmail">
+              <Form.Label>Nama Lengkap</Form.Label>
+              <Form.Control
+                type="name"
+                placeholder="Nama Lengkap"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -85,23 +99,23 @@ const LoginPage = () => {
             </Form.Group>
 
             {/* Forgot Password on the right */}
-            <p className="text-end mt-2">
+            {/* <p className="text-end mt-2">
               <a href="#">Forgot Password?</a>
-            </p>
+            </p> */}
             <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
-              Login
+              Sign Up
             </Button>
 
             {/* Register below the login button */}
-            <p className="mt-3">
-              Don,t have an account? <a href="#">Register</a>
+            <p className="mt-3 text-center">
+              Sudah Punya Akun? <a href="#">Masuk</a>
             </p>
           </Form>
         </Col>
 
         {/* Image on the Right */}
         
-        <Col md={6} className="login-image text-center">
+        <Col md={6} className="login-image height-20px">
         <img
             src={fotologin}
             alt="Login Image"
