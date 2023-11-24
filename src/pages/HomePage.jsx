@@ -27,7 +27,7 @@ import logonav from '../images/logonav.png'
 const Home = () => {
   return (
     <>
-      <NavbarBS expand="lg" className="bg-body-tertiary">
+      <NavbarBS expand="lg" className="bg-body-tertiary" sticky='top'>
   <Container fluid>
     <NavbarBS.Brand>
       <img src={logonav} alt='logo' style={{width: '90px', height: '60px', paddingBottom:'20px'}} />
