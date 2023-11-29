@@ -72,14 +72,12 @@ body, html {
 /* BAGIAN 1  */
   .container1{
     height: 560px;
-    width: 100%;
     margin-top: 50px;
     display: flex;
     }
 
     .container2{
-    width: 60%;
-    margin-left: 130px;
+    margin-left: 120px;
     margin-top: 60px;
     }
 
@@ -108,20 +106,14 @@ body, html {
     margin-bottom: 60px;
   }
 
-  .container3{
-    width: 40%;
-    margin-right: 70px;
-    }
-
+  
   .container3 img{
-    width: 450px;
-    height: 450px;
+    width: 430px;
+    height: 430px;
     }
 
 /* BAGIAN 2 */
   .rencana{
-   
-    width: 100%;
     height: 560px;
   }
 
@@ -145,22 +137,14 @@ body, html {
   .isi{
     display: flex;
     margin-top: 80px;
+    margin-left: 8%;
    
   }
 
-  .isi1 {
+  .isi1, .isi2, .isi3 {
     text-align: center;
-    margin-left: 190px;
-  }
-
-  .isi2 {
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .isi3 {
-    text-align: center;
-    margin-left: 30px;
+    
+    
   }
 
   .textrencana{
@@ -176,11 +160,11 @@ body, html {
   }
 
   .gambarnutrisi{
-    margin-left: 110px;
+    margin-left: 18%;
   }
 
   .textnutrisi{
-    margin-left: 100px;
+    margin-left: 22%;
     margin-top: 40px;
   }
   .judulnutrisi{
@@ -202,6 +186,22 @@ body, html {
   height: 500px;
 }
 
+.gambargabung{
+  margin-left: 100px;
+}
+
+.textgabung{
+  margin-left: 17%;
+  margin-top: 40px;
+}
+
+.listgabung{
+  width: 500px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #242424;
+}
+
 /* BAGIAN ARTIKEL */
 
 .artikel p:nth-child(1){
@@ -214,6 +214,58 @@ margin-top: 30px;
 
 .artikel1{
   display: flex;
-  height: 700px;
+  height: 650px;
 }
+
+/* Footerr */
+.bawah{
+  background-color: #34745C;
+  height: 250px;
+  width: 100%;
+}
+
+.bawah p:nth-child(1){
+  color: #34745C;
+  font-size: 15px;
+}
+
+.bawah p:nth-child(2){
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+.baris2bawah{
+  display: flex;
+  justify-content: center;
+}
+
+.notelpbawah{
+  margin-right: 25px;
+}
+
+.notelpbawah, .emailbawah{
+  color: #ffffff;
+  font-weight: 0px;
+}
+
+.logososialmedia{
+  display: flex;
+  margin-top: 20px;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.fb, .ig, .tw{
+  margin-right: 20px;
+}
+
+hr{
+  color: #ffffff;
+}
+
+
 /* INI ADALAH TAGAR PENUTUP CSS HOMEPAGE*/
