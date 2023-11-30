@@ -259,12 +259,14 @@ margin-top: 30px;
   justify-content: center;
 }
 
-.fb, .ig, .tw{
+.fb{
   margin-right: 20px;
+  color: #ffffff;
 }
 
 hr{
-  color: #ffffff;
+  
+  border: 1px solid white;
 }
 
 
