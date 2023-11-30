@@ -31,7 +31,7 @@ const Home = () => {
       <NavbarBS expand="lg" className="bg-body-tertiary" sticky='top'>
         <Container fluid>
           <NavbarBS.Brand>
-            <img src={logonav} alt='logo' style={{ width: '90px', height: '60px', paddingBottom: '10px' }} />
+            <img src={logonav} alt='logo' style={{ marginLeft:'20%' , width: '90px', height: '60px', paddingBottom: '10px' }} />
           </NavbarBS.Brand>
           <NavbarBS.Toggle aria-controls="navbarScroll" />
           <NavbarBS.Collapse id="navbarScroll">
@@ -42,7 +42,7 @@ const Home = () => {
 
             >
               <Nav.Link href="/">Beranda</Nav.Link>
-              <Nav.Link href="Login">Tentang Kami</Nav.Link>
+              <Nav.Link href="tentangkami">Tentang Kami</Nav.Link>
               <Nav.Link href="Register">Informasi</Nav.Link>
               <Nav.Link href="#action2">Konsultasi</Nav.Link>
             </Nav>
