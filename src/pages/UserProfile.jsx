@@ -42,7 +42,7 @@ function userprofile() {
       </NavbarBS>
 
       <Container>
-      <Row>
+      <row>
         <Col xs={6} md={4}>
           <Image src="holder.js/171x180" rounded />
         </Col>
@@ -52,7 +52,7 @@ function userprofile() {
         <Col xs={6} md={4}>
           <Image src="holder.js/171x180" thumbnail />
         </Col>
-      </Row>
+      </row>
     </Container>
       
 
