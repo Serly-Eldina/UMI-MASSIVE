@@ -36,9 +36,10 @@ const Home = () => {
           <NavbarBS.Toggle aria-controls="navbarScroll" />
           <NavbarBS.Collapse id="navbarScroll">
             <Nav
-              className="navbar-custom me-auto my-2 my-lg-0"
-              style={{ maxHeight: 'auto' }}
+              className="navbar-custom me-auto me-2 my-2 my-lg-0"
+              style={{ maxHeight: 'auto', marginLeft: '300px' }}
               navbarScroll
+
             >
               <Nav.Link href="/">Beranda</Nav.Link>
               <Nav.Link href="Login">Tentang Kami</Nav.Link>
