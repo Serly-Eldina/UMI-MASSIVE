@@ -25,7 +25,7 @@ function userprofile() {
             >
               <Nav.Link href="#action1">Beranda</Nav.Link>
               <Nav.Link href="#action2">Tentang Kami</Nav.Link>
-              <Nav.Link href="#action2">Informasi</Nav.Link>
+              <Nav.Link href="Informasi">Informasi</Nav.Link>
               <Nav.Link href="#action2">Konsultasi</Nav.Link>
             </Nav>
             <Form className="d-flex">
@@ -42,7 +42,7 @@ function userprofile() {
       </NavbarBS>
 
       <Container>
-      <Row>
+      <row>
         <Col xs={6} md={4}>
           <Image src="holder.js/171x180" rounded />
         </Col>
@@ -52,7 +52,7 @@ function userprofile() {
         <Col xs={6} md={4}>
           <Image src="holder.js/171x180" thumbnail />
         </Col>
-      </Row>
+      </row>
     </Container>
       
 

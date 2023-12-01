@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
+import '../css/register.css';
 
-const LoginPage = () => {
+const RegisterPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -55,7 +56,7 @@ const LoginPage = () => {
             style={{ width: '90px', height: '60px' }}
             className="mb-4"
           />
-          <h2 className="mb-4">Log in to your Account</h2>
+          <h3 className="mb-4">Sign up to your Account</h3>
 
           {/* Google Login Button */}
           <div className="d-flex justify-content-center mb-3">
@@ -78,7 +79,7 @@ const LoginPage = () => {
           </div>
           <Form onSubmit={handleLogin}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
-              <Form.Label>Nama Lengkap</Form.Label>
+
               <Form.Control
                 type="name"
                 placeholder="Nama Lengkap"
@@ -87,7 +88,7 @@ const LoginPage = () => {
               />
             </Form.Group>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+
               <Form.Control
                 type="email"
                 placeholder="Enter email"
@@ -97,7 +98,7 @@ const LoginPage = () => {
             </Form.Group>
 
             <Form.Group className="text-start mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -107,9 +108,19 @@ const LoginPage = () => {
             </Form.Group>
 
 
-            <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
+            <Button
+              variant="primary"
+              type="submit"
+              style={{
+                backgroundColor: '#34745C',
+                display: 'block',
+                margin: 'auto',
+                height: '35px',
+              }}
+            >
               Sign Up
             </Button>
+
 
             {/* Register below the login button */}
             <p className="mt-3 text-center">
@@ -134,4 +145,4 @@ const LoginPage = () => {
 
 
 
-export default LoginPage
+export default RegisterPage

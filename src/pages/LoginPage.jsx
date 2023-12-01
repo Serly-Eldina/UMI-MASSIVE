@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+import '../css/login.css';
+>>>>>>> 14b04bc0144be7acac16f4f3bf7da3a18829e8ea
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -54,7 +58,7 @@ const LoginPage = () => {
             style={{ width: '90px', height: '60px' }}
             className="mb-4"
           />
-          <h2 className="mb-4">Log in to your Account</h2>
+          <h3 className="mb-4">Log in to your Account</h3>
 
           {/* Google Login Button (centered horizontally) */}
           <div className="d-flex justify-content-center mb-3">
@@ -79,7 +83,7 @@ const LoginPage = () => {
 
           <Form onSubmit={handleLogin}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              
               <Form.Control
                 type="email"
                 placeholder="Enter email"
@@ -89,7 +93,7 @@ const LoginPage = () => {
             </Form.Group>
 
             <Form.Group className="text-start mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+               
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -99,13 +103,23 @@ const LoginPage = () => {
             </Form.Group>
 
             {/* Forgot Password on the right */}
-            <p className="text-end mt-2">
+            <p className="text-end mt-4">
               <a href="#">Forgot Password?</a>
             </p>
             
-              <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
-                Login
-              </Button>
+            <Button
+              variant="primary"
+              type="submit"
+              style={{
+                backgroundColor: '#34745C',
+                display: 'block',
+                margin: 'auto',
+                height: '35px',
+                marginTop: '20px',
+              }}
+            >
+              Login
+            </Button>
            
 
             {/* Register below the login button */}
