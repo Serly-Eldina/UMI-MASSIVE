@@ -43,7 +43,7 @@ const Home = () => {
             >
               <Nav.Link href="/">Beranda</Nav.Link>
               <Nav.Link href="tentangkami">Tentang Kami</Nav.Link>
-              <Nav.Link href="Register">Informasi</Nav.Link>
+              <Nav.Link href="Informasi">Informasi</Nav.Link>
               <Nav.Link href="#action2">Konsultasi</Nav.Link>
             </Nav>
             <Form className="d-flex" style={{ marginRight: '20px' }}>

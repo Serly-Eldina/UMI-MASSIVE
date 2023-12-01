@@ -25,7 +25,7 @@ function userprofile() {
             >
               <Nav.Link href="#action1">Beranda</Nav.Link>
               <Nav.Link href="#action2">Tentang Kami</Nav.Link>
-              <Nav.Link href="#action2">Informasi</Nav.Link>
+              <Nav.Link href="Informasi">Informasi</Nav.Link>
               <Nav.Link href="#action2">Konsultasi</Nav.Link>
             </Nav>
             <Form className="d-flex">
