@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
