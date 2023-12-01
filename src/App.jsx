@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import UserProfile from './pages/UserProfile'
 import TentangKami from './pages/TentangKami'
+import Informasi from './pages/Informasi'
 function App() {
   return(
    <div>
@@ -17,6 +18,8 @@ function App() {
     <Route path='Register' Component={RegisterPage}/>
     <Route path='userprofile' Component={UserProfile}/>
     <Route path='tentangkami' Component={TentangKami}/>
+    <Route path='Informasi' Component={Informasi}/>
+   
    
    </Routes>
 

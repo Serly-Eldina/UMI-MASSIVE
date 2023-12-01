@@ -1,0 +1,21 @@
+.tips{
+    height: 200px;
+   }
+   
+   .tips2 p:nth-child(2), .tips2 p:nth-child(3){
+     color: #DDE1E6;
+     font-size: 33px;
+     font-weight: 600;
+     margin-left: 10%;
+   }
+   
+   .tips2 p:nth-child(2){
+     margin-top: 3%;
+   }
+   
+   .tips2 p:nth-child(2){
+     margin-bottom: 0%;
+   }
+   
+   /* css apa itu tanaman hias */
+   /* INI ADALAH TARAG PENUTUP CSS PAGE INFORMASI */
