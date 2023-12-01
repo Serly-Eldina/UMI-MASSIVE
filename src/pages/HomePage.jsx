@@ -89,7 +89,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='col-md-12'>
+      <div style={{paddingTop:'50px'}} className='col-md-12'>
         <div className='rencana'>
           <div className='judul'>
             <p>Memulai Rencana Anda dengan benar</p>

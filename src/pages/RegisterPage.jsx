@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
-import '../css/login.css';
+import '../css/register.css';
 
 const RegisterPage = () => {
   const [email, setEmail] = useState('');
