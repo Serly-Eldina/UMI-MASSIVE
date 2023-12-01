@@ -9,30 +9,16 @@ import logosementara from '../assets/logosementara.png'
 import logonav from '../images/logonav.png'
 import background from '../images/tips.png'
 import apaitu from '../images/apaitu.png'
-import tanah1 from '../images/tanah1.png'
-import tanah2 from '../images/tanah2.png'
-import tanah3 from '../images/tanah3.png'
-import Card from 'react-bootstrap/Card';
-import tips1 from '../images/tips1.png'
-import tips2 from '../images/tips2.png'
-import tips3 from '../images/tips3.png'
-import tips4 from '../images/tips4.png'
-import tips5 from '../images/tips5.png'
-import tips6 from '../images/tips6.png'
-import tips7 from '../images/tips7.png'
-import tips8 from '../images/tips8.png'
-import tips9 from '../images/tips9.png'
-import tips10 from '../images/tips10.png'
-import tips11 from '../images/tips11.png'
-import tips12 from '../images/tips12.png'
-import tips13 from '../images/tips13.png'
-import tips14 from '../images/tips14.png'
-import tips15 from '../images/tips15.png'
-import tips16 from '../images/tips16.png'
+import tanah1 from '../images/tanah1.png'; import tanah2 from '../images/tanah2.png'; import tanah3 from '../images/tanah3.png'
+import Card from 'react-bootstrap/Card'; 
 
-
-
-
+import tips1 from '../images/tips1.png'; import tips2 from '../images/tips2.png'; import tips3 from '../images/tips3.png'; import tips4 from '../images/tips4.png'
+import tips5 from '../images/tips5.png'; import tips6 from '../images/tips6.png'; import tips7 from '../images/tips7.png'; import tips8 from '../images/tips8.png'
+import tips9 from '../images/tips9.png'; import tips10 from '../images/tips10.png'; import tips11 from '../images/tips11.png'; import tips12 from '../images/tips12.png'
+import tips13 from '../images/tips13.png'; import tips14 from '../images/tips14.png'; import tips15 from '../images/tips15.png'; import tips16 from '../images/tips16.png'
+import play from '../images/play.png';
+import video1 from '../images/video1.png'; import video2 from '../images/video2.png'; import video3 from '../images/video3.png'; import video4 from '../images/video4.png';
+import video5 from '../images/video5.png'; import video6 from '../images/video6.png'; import video7 from '../images/video7.png'; import video8 from '../images/video8.png';
 const informasi = () => {
     return (
       <>   
@@ -153,10 +139,10 @@ const informasi = () => {
 
     <div className='isitips'>
 
-        <div className='tipsbaris'  style={{ marginTop: '50px'}}>
+        <div className='tipsbaris' style={{ marginTop: '50px'}}>
                 <div className='col-md-3'>
                     <a className="fb" href="#"> 
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{height: '350px'}}>
                         <img src={tips1} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Lidah Mertua</Card.Title>
@@ -169,7 +155,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips2} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Sirih Gading</Card.Title>
@@ -182,7 +168,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips3} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Peace Lily</Card.Title>
@@ -195,7 +181,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips4} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Aloe Vera</Card.Title>
@@ -211,7 +197,7 @@ const informasi = () => {
         <div className='tipsbaris'>
         <div className='col-md-3'>
                     <a className="fb" href="#"> 
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips5} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Bromeliad</Card.Title>
@@ -224,7 +210,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips6} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Lili Paris</Card.Title>
@@ -237,7 +223,8 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
+                        
                         <img src={tips7} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Monstera Deliciosa</Card.Title>
@@ -250,7 +237,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips8} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Bunga Krisan</Card.Title>
@@ -265,7 +252,7 @@ const informasi = () => {
         <div className='tipsbaris'>
         <div className='col-md-3'>
                     <a className="fb" href="#"> 
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips9} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Aglaonema</Card.Title>
@@ -278,7 +265,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips10} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Kaktus Koboi</Card.Title>
@@ -291,7 +278,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips11} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Pakis Jepang</Card.Title>
@@ -304,7 +291,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips12} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Paku Tanduk Rusa</Card.Title>
@@ -320,7 +307,7 @@ const informasi = () => {
              <div className='tipsbaris'>
         <div className='col-md-3'>
                     <a className="fb" href="#"> 
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{  height: '350px'}}>
                         <img src={tips13} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Sansevieria</Card.Title>
@@ -333,7 +320,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips14} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Canna</Card.Title>
@@ -346,7 +333,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips15} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Siklok</Card.Title>
@@ -359,7 +346,7 @@ const informasi = () => {
                 </div>
                 <div className='col-md-3'>
                 <a className="fb" href="#">
-                        <Card className='kotaktips' style={{ width: '250px', height: '350px'}}>
+                        <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips16} />
                         <Card.Body>
                             <Card.Title style={{textAlign: 'center', fontSize: '20px', color: '#044F1E', fontWeight: '650'}}>Caladium</Card.Title>
@@ -375,6 +362,372 @@ const informasi = () => {
 </div>
 </div>
 
+
+
+
+
+
+<div className='tipsntrik2'>
+    <div className='kotak2' style={{backgroundColor: '#34745C'}}>
+            <p></p>
+            <p style={{textAlign: 'center', color: '#ffff', fontWeight: 'bold', fontSize: '23px'}}>
+                Video Tutorial</p>
+        </div>
+
+    <div className='isitips'>
+
+        <div className='tipsbaris' style={{ marginTop: '50px'}}>
+
+                <div className='col-md-3'>
+                    <a className="fb" href="#"> 
+                        <Card className='kotaktips' style={{height: '235px'}}>
+                        <img src={video1} />
+                                    <div className='child'>
+                                        <img src={play} />
+                                    </div>
+                        <Card.Body>
+                            <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>12 cara merawat tanaman hias daun dan bunga</Card.Title>
+                            <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                    <p>232rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                    <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                        <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                    </div>
+                                </div>
+                           </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </a>
+                </div>
+
+                <div className='col-md-3'>
+                        <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video2} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>12 cara merawat tanaman hias daun dan bunga</Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>232rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                            </a>
+                </div>
+                <div className='col-md-3'>
+                    <a className="fb" href="#"> 
+                            <Card className='kotaktips' style={{height: '235px'}}>
+                            <img src={video3} />
+                                <div className='child'>
+                                    <img src={play} />
+                                </div>
+                            <Card.Body>
+                                <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Cara Merimbunkan Dan Menyuburkan Janda Bolong di Pot</Card.Title>
+                                <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                        <p>37rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                        <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                            <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>11 min</p>
+                                        </div>
+                                    </div>
+                            </Card.Text>
+                            </Card.Body>
+                            </Card>
+                        </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                            <Card className='kotaktips' style={{height: '235px'}}>
+                            <img src={video4} />
+                                <div className='child'>
+                                    <img src={play} />
+                                </div>
+                            <Card.Body>
+                                <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Tips Merawat Tanaman Hias Bagi Pemula Agar Tumbuh Subur</Card.Title>
+                                <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                        <p>37rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                        <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                            <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>11 min</p>
+                                        </div>
+                                    </div>
+                            </Card.Text>
+                            </Card.Body>
+                            </Card>
+                </a>
+                </div>
+        </div>
+
+        <div className='tipsbaris'>
+        <div className='col-md-3'>
+                 <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video5} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Tips perawatan & pupuk aglaonema terbaik </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>518rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+            </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video6} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Serunya Berkebun di Rooftop dan Balkon </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>518rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>3 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video7} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '12px', color: '#044F1E', fontWeight: '580'}}>Wajib Punya Dirumah !! 15 Tanaman Hias Pembawa Rejeki & Keberuntungan </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '12px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>29rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}> min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video8} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>cara membuat taman di depan rumah </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>1.3jt views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>3 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+        </div>
+        <div className='tipsbaris'>
+        <div className='col-md-3'>
+                    <a className="fb" href="#"> 
+                        <Card className='kotaktips' style={{height: '235px'}}>
+                        <img src={video1} />
+                                    <div className='child'>
+                                        <img src={play} />
+                                    </div>
+                        <Card.Body>
+                            <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>12 cara merawat tanaman hias daun dan bunga</Card.Title>
+                            <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                    <p>232rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                    <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                        <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                    </div>
+                                </div>
+                           </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </a>
+                </div>
+
+                <div className='col-md-3'>
+                        <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video2} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>12 cara merawat tanaman hias daun dan bunga</Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>232rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                            </a>
+                </div>
+            
+                <div className='col-md-3'>
+                    <a className="fb" href="#"> 
+                            <Card className='kotaktips' style={{height: '235px'}}>
+                            <img src={video3} />
+                                <div className='child'>
+                                    <img src={play} />
+                                </div>
+                            <Card.Body>
+                                <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Cara Merimbunkan Dan Menyuburkan Janda Bolong di Pot</Card.Title>
+                                <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                        <p>37rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                        <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                            <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>11 min</p>
+                                        </div>
+                                    </div>
+                            </Card.Text>
+                            </Card.Body>
+                            </Card>
+                        </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                            <Card className='kotaktips' style={{height: '235px'}}>
+                            <img src={video4} />
+                                <div className='child'>
+                                    <img src={play} />
+                                </div>
+                            <Card.Body>
+                                <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Tips Merawat Tanaman Hias Bagi Pemula Agar Tumbuh Subur</Card.Title>
+                                <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                        <p>37rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                        <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                            <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>11 min</p>
+                                        </div>
+                                    </div>
+                            </Card.Text>
+                            </Card.Body>
+                            </Card>
+                </a>
+                </div>
+             </div>
+        <div className='tipsbaris'>
+        <div className='col-md-3'>
+                 <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video5} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Tips perawatan & pupuk aglaonema terbaik </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>518rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>14 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+            </div>
+            <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video6} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>Serunya Berkebun di Rooftop dan Balkon </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>518rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>3 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video7} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '12px', color: '#044F1E', fontWeight: '580'}}>Wajib Punya Dirumah !! 15 Tanaman Hias Pembawa Rejeki & Keberuntungan </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '12px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>29rb views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}> min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+                <div className='col-md-3'>
+                <a className="fb" href="#"> 
+                                <Card className='kotaktips' style={{height: '235px'}}>
+                                <img src={video8} />
+                                            <div className='child'>
+                                                <img src={play} />
+                                            </div>
+                                <Card.Body>
+                                    <Card.Title style={{fontSize: '13px', color: '#044F1E', fontWeight: '580'}}>cara membuat taman di depan rumah </Card.Title>
+                                    <Card.Text style={{textAlign: 'justify', fontSize: '13px'}}>
+                                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                                            <p>1.3jt views  </p>  &bull;  <p>2 Weeks ago </p> 
+                                            <div style={{ marginTop:'2px',  width: '47px', height: '16px', backgroundColor: '#6F6F6F', borderRadius: '10px'}}>
+                                                <p style={{textAlign:'center', color: '#ffff', textDecoration: 'none', fontSize: '12px'}}>3 min</p>
+                                            </div>
+                                        </div>
+                                </Card.Text>
+                                </Card.Body>
+                                </Card>
+                    </a>
+                </div>
+
+             </div>   
+</div>
+</div>
 
 
       <div className='bawah'>

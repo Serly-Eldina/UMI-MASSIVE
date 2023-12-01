@@ -57,11 +57,15 @@
 /* BAGIAN 3 TIPS & TRIK */
 
  .tipsntrik{
-    margin-left: 8%;
-    height: 2000px;
+    margin-left: 6%;
+    height: 1700px;
  }
 
- .kotak{
+ .tipsntrik2{
+  margin-left: 6%;
+    height: 1270px;
+ }
+ .kotak, .kotak2 {
     border-radius: 40px 0 40px 0;
     height: 35px;
     width: 200px;
@@ -78,9 +82,21 @@
 
  .kotaktips{
     box-shadow: 2px 2px 12px rgba(132, 130, 130, 0.2);
-   
+   width: 270px;
     
  }
- 
 
+ /* VIDEO TUTUORIAL */
  
+ .kotak2{
+    width: 220px;
+ }
+
+ .child {
+  /* ... */
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 16%;
+  justify-content: center;}
+
+
