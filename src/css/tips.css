@@ -1,0 +1,45 @@
+/* tips.css */
+.tipslidah {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .judul {
+    color: #044f1e;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 550;
+  }
+  
+  .gambarlidah {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  .bahan,
+  .hal,
+  .tipsandtrik {
+    margin-top: 3%;
+  }
+  
+  .bawah {
+    margin-top: 3%;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+   
+    .gambarlidah {
+      width: 70%;
+      margin-left: 15%;
+    }
+    
+    .bahan,
+    .hal,
+    .tipsandtrik {
+      margin-left: 15%;
+      width: 70%;
+    }
+  }
+  
