@@ -9,6 +9,7 @@ import TentangKami from './pages/TentangKami'
 import Informasi from './pages/Informasi'
 import LidahMertua from './pages/LidahMertua'
 import Aglaonema from './pages/Aglaonema'
+import Konsultasi from './pages/Konsultasi'
 function App() {
   return(
    <div>
@@ -23,8 +24,7 @@ function App() {
     <Route path='Informasi' Component={Informasi}/>
     <Route path='LidahMertua' Component={LidahMertua}/>
     <Route path='Aglaonema' Component={Aglaonema}/>
-   
-   
+    <Route path='Konsultasi' Component={Konsultasi}/>
    </Routes>
 
 
