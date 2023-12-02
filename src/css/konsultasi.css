@@ -3,13 +3,17 @@
     font-weight: bold;
     color: #044F1E;
    text-align: justify;
+   margin-left: 15%;
+   margin-bottom: 50px;
+   
 }
 
 .teks-konsultasi p {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 18px;
+    /* font-weight: bold; */
     color: #044F1E;
-    text-align: center;
-
-
+    text-align: justify;
+    margin-left: 15%;
+    
 }
+

@@ -47,20 +47,26 @@ const Konsultasi = () => {
       </NavbarBS>
       <div className='container1'>
         <div className='cold-md-5'>
-          <div className='gambarkonsultasi'>
+          <div className='gambar-konsultasi'>
             <img
               src={konsultasi}
               alt=""
               align="right"
+              style={{
+              // height: '450px',
+              width: '500px',
+              marginRight: '5%',
+              }}
             />
             <div className="col-md-6">
-              <div className="teks-konsultasi"></div>
+              <div className="teks-konsultasi">
               <h3>Tanaman Hias mu punya masalah ?</h3>
               <p>
                 Temukan solusi terkait permasalahan anda dalam merawat tanaman
                 hias dengan para ahlinya, selain itu anda juga bisa bertanya
                 tentang apapun seputar tanaman hias.
               </p>
+              </div>
             </div>
           </div>
         </div>
