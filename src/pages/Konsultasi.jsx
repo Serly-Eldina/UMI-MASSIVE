@@ -6,6 +6,8 @@ import logosementara from '../assets/logosementara.png'
 import logonav from '../images/logonav.png'
 import konsultasi from '../images/konsultasi.png'
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import '../css/konsultasi.css';
 
 const Konsultasi = () => {
   return (
@@ -43,38 +45,26 @@ const Konsultasi = () => {
           </NavbarBS.Collapse>
         </Container>
       </NavbarBS>
-      <div>
-        <div>
-          <img
-            src={konsultasi}
-            alt=""
-            style={{
-              maxWidth: '100%',
-              align: 'right',
-              height: 'auto',
-              display: 'block', // Membuat gambar tetap dalam aliran dokumen
-              margin: 'auto',   // Pusatkan gambar
-            }}
-          />
-          <div className='container1'>
-            <div className='cold-md-5'>
-              <div className='gambarkonsultasi'>
-                <img
-                  src={konsultasi}
-                  alt=""
-                  style={{
-                    maxWidth: '100%',
-                    align: 'right',
-                    height: 'auto',
-                    display: 'block', // Membuat gambar tetap dalam aliran dokumen
-                    margin: 'auto',   // Pusatkan gambar
-                  }}
-                />
-              </div>
+      <div className='container1'>
+        <div className='cold-md-5'>
+          <div className='gambarkonsultasi'>
+            <img
+              src={konsultasi}
+              alt=""
+              align="right"
+            />
+            <div className="col-md-6">
+              <div className="teks-konsultasi"></div>
+              <h3>Tanaman Hias mu punya masalah ?</h3>
+              <p>
+                Temukan solusi terkait permasalahan anda dalam merawat tanaman
+                hias dengan para ahlinya, selain itu anda juga bisa bertanya
+                tentang apapun seputar tanaman hias.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
