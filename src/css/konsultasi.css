@@ -18,6 +18,20 @@
     
 }
 
+.pakar p:nth-child(1){
+    font-weight: bolder;
+    font-size: 32px;
+    color: #044F1E;
+    margin-left: 70px;
+    margin-top: 30px;
+    }
+    
+    .pakar{
+      display: flex;
+      height: 50%;
+      
+    }
+
 .bawah{
     background-color: #34745C;
     height: 250px;

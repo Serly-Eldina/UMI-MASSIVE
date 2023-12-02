@@ -88,7 +88,7 @@ const Konsultasi = () => {
       <div className='pakar'>
 
         <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', marginLeft: '22%', marginTop: '10px' }}>
+          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', marginLeft: '10%', marginTop: '10px' }}>
             <img src={Pakar1} />
             <Card.Body>
               <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Budi Gunawan</Card.Title>
@@ -100,27 +100,29 @@ const Konsultasi = () => {
           </a>
         </div>
         <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', margin: '10px', marginLeft: '15%' }}>
+          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', margin: '10px', marginLeft: '40%' }}>
             <img src={Pakar2} />
             <Card.Body>
-              <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Pohon Buttonwood</Card.Title>
-              <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.
-              </Card.Text>
-              {/* <img src={user} style={{ marginTop: '25px' }} /> */}
+              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Karin marina</Card.Title>
+              <Card.Text style={{ fontSize: '16px' }}>Ahli tanaman</Card.Text>
+              <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
+              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px', margin: '15px' }}>Rp.10.000</Card.Title>
             </Card.Body>
-          </Card></a></div>
+          </Card>
+          </a>
+        </div>
         <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', margin: '10px', marginLeft: '15%' }}>
+          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', margin: '10px', marginLeft: '70%' }}>
             <img src={Pakar3} />
             <Card.Body>
-              <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Pohon Buttonwood</Card.Title>
-              <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.
-              </Card.Text>
-              {/* <img src={user} style={{ marginTop: '25px' }} /> */}
+              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Dewi Santika</Card.Title>
+              <Card.Text style={{ fontSize: '16px' }}>Ahli tanaman</Card.Text>
+              <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
+              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px', margin: '15px' }}>Rp.10.000</Card.Title>
             </Card.Body>
-          </Card></a></div>
+          </Card>
+          </a>
+        </div>
       </div>
       <div className='bawah'>
         <p>Sistem Informasi Perawatan Tanaman Hias</p>
