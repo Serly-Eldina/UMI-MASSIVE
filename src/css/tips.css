@@ -1,37 +1,45 @@
-
-.tipslidah{
-    height: 530px;
-}
-
-.judul{
-    color: #044F1E;
+/* tips.css */
+.tipslidah {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .judul {
+    color: #044f1e;
     font-size: 30px;
     text-align: center;
     font-weight: 550;
-    margin-top: 3%;
-}
-
-.gambarlidah{
-    width: 600px;
-    height: 350px;
-    text-align: center;
-    margin-left: 27%;
+  }
+  
+  .gambarlidah {
+    width: 100%;
+    height: auto;
     margin-top: 15px;
-}
-
- .bahan{
-    margin-left: 10%;
-    height: 200px;
-}
-
-.hal{
-    margin-left: 10%;
-    height: 250px;
-}
-.tipsandtrik{
-    margin-left: 10%;
-    height: 230px;
-}
-
-
-/*  &bull; &nbsp;  */
+  }
+  
+  .bahan,
+  .hal,
+  .tipsandtrik {
+    margin-top: 3%;
+  }
+  
+  .bawah {
+    margin-top: 3%;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+   
+    .gambarlidah {
+      width: 70%;
+      margin-left: 15%;
+    }
+    
+    .bahan,
+    .hal,
+    .tipsandtrik {
+      margin-left: 15%;
+      width: 70%;
+    }
+  }
+  

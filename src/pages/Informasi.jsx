@@ -141,7 +141,7 @@ const informasi = () => {
 
         <div className='tipsbaris' style={{ marginTop: '50px'}}>
                 <div className='col-md-3'>
-                    <a className="fb" href="LidahMertua"> 
+                    <a className="fb" href="#"> 
                         <Card className='kotaktips' style={{height: '350px'}}>
                         <img src={tips1} />
                         <Card.Body>
@@ -251,7 +251,7 @@ const informasi = () => {
         </div>
         <div className='tipsbaris'>
         <div className='col-md-3'>
-                    <a className="fb" href="Aglaonema"> 
+                    <a className="fb" href="#"> 
                         <Card className='kotaktips' style={{ height: '350px'}}>
                         <img src={tips9} />
                         <Card.Body>
