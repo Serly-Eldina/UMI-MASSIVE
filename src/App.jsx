@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 import HomePage from './pages/HomePage'
@@ -10,11 +10,14 @@ import Informasi from './pages/Informasi'
 import LidahMertua from './pages/LidahMertua'
 import Aglaonema from './pages/Aglaonema'
 import Konsultasi from './pages/Konsultasi'
-
 function App() {
-  return(
-   <div>
-    
+  // Membuat array untuk menyimpan path halaman yang tidak memerlukan Navbar dan Footer
+  const excludePaths = ['/Login', '/Register'];
+
+  return (
+    <div>
+      {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
+      {!excludePaths.includes(window.location.pathname) && <NavbarComponent />}
 
    <Routes>
     <Route path="/" Component ={HomePage}/>
@@ -26,13 +29,12 @@ function App() {
     <Route path='LidahMertua' Component={LidahMertua}/>
     <Route path='Aglaonema' Component={Aglaonema}/>
     <Route path='Konsultasi' Component={Konsultasi}/>
-   
    </Routes>
 
-
-   </div>
-   
-  )
+      {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
+      {!excludePaths.includes(window.location.pathname) && <FooterComponent />}
+    </div>
+  );
 }
 
 export default App
