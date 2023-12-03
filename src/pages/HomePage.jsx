@@ -22,7 +22,6 @@ import '../css/hompage.css'
 const Home = () => {
   return (
     <>
-      
 
       <div className="col-md-12">
         <div className='container1'>

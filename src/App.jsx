@@ -10,6 +10,10 @@ import Informasi from './pages/Informasi'
 import LidahMertua from './pages/LidahMertua'
 import Aglaonema from './pages/Aglaonema'
 import Konsultasi from './pages/Konsultasi'
+
+import NavbarComponent from './components/NavbarComponent'
+import FooterComponent from './components/FooterComponent'
+
 function App() {
   // Membuat array untuk menyimpan path halaman yang tidak memerlukan Navbar dan Footer
   const excludePaths = ['/Login', '/Register'];
@@ -19,17 +23,17 @@ function App() {
       {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
       {!excludePaths.includes(window.location.pathname) && <NavbarComponent />}
 
-   <Routes>
-    <Route path="/" Component ={HomePage}/>
-    <Route path="Login" Component ={LoginPage}/>
-    <Route path='Register' Component={RegisterPage}/>
-    <Route path='userprofile' Component={UserProfile}/>
-    <Route path='tentangkami' Component={TentangKami}/>
-    <Route path='Informasi' Component={Informasi}/>
-    <Route path='LidahMertua' Component={LidahMertua}/>
-    <Route path='Aglaonema' Component={Aglaonema}/>
-    <Route path='Konsultasi' Component={Konsultasi}/>
-   </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="Login" element={<LoginPage />} />
+        <Route path="Register" element={<RegisterPage />} />
+        <Route path="userprofile" element={<UserProfile />} />
+        <Route path="tentangkami" element={<TentangKami />} />
+        <Route path="Informasi" element={<Informasi />} />
+        <Route path="LidahMertua" element={<LidahMertua />} />
+        <Route path="Aglaonema" element={<Aglaonema />} />
+        <Route path="Konsultasi" element={<Konsultasi />} />
+      </Routes>
 
       {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
       {!excludePaths.includes(window.location.pathname) && <FooterComponent />}
