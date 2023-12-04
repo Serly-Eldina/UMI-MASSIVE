@@ -30,7 +30,7 @@ const NavbarComponent = () => {
               <Button variant="outline-success">Search</Button>
             </Form>
             <Navbar.Brand className="mt-2 mt-lg-0">
-              <img src={logosementara} alt='logo' />
+              <a href="UserProfile"> <img src={logosementara} alt='logo' /></a>
             </Navbar.Brand>
           </Navbar.Collapse>
         </Container>
