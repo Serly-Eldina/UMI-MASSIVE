@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="Login" element={<Login />} />
         <Route path="Register" element={<Register />} />
-        <Route path="userprofile" element={<UserProfile />} />
+        <Route path="profile" element={<UserProfile />} />
         <Route path="tentangkami" element={<TentangKami />} />
         <Route path="Informasi" element={<Informasi />} />
         <Route path="LidahMertua" element={<LidahMertua />} />
