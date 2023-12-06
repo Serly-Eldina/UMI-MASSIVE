@@ -1,12 +1,12 @@
-import NavbarComponent from '../components/NavbarComponent';
+
 import Button from 'react-bootstrap/Button';
 import fotoprofile from '../images/fotoprofile.png'
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import '../css/userprofile.css';
+
 
 
 

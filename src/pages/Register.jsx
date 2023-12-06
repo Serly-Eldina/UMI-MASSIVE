@@ -1,10 +1,12 @@
+
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import googlelogo from '../images/googlelogo.png'
 
-const LoginPage = () => {
+
+const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -44,52 +46,54 @@ const LoginPage = () => {
   };
 
   return (
-    <Container className="login-container">
-      <Row className="login-content">
+    <Container className="login-container d-flex flex-column align-items-center justify-content-center mt-5">
+      <Row className="login-content align-items-center mb-5">
         {/* Login Form on the Left */}
-        <Col md={6} className="login-form d-flex flex-column align-items-center justify-content-center">
+        <Col className="login-form d-flex flex-column align-items-center justify-content-center"
+        style={{
+          borderRadius: '10px',
+          boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+          height: '550px',
+        }}>
           <img
             src={logologin}
             alt="Login Image"
             style={{ width: '90px', height: '60px' }}
-            className="mb-4"
+            className="mb-4 mt-4"
           />
-          <h2 className="mb-4">Log in to your Account</h2>
-
-          {/* Google Login Button (centered horizontally) */}
+          <h3 className="mb-4">Sign up to your Account</h3>
+          {/* Google Login Button */}
           <div className="d-flex justify-content-center mb-3">
             <Button
               variant="outline-danger"
               onClick={handleGoogleLogin}
-              className="d-flex align-items-center google-login-button"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                alt="Google Logo"
-                className="google-logo me-2"
-              />
-              Login with Google
+              className="mb-3 d-flex align-items-center google-login-button">
+              <img className='mx-2' style={{height:'25px', width:'25px'}}
+                src={googlelogo}/>
+              Sign up with Google
             </Button>
           </div>
-
-          {/* Additional text or content below the button */}
           <div className="text-center">
             <p>atau</p>
           </div>
-
           <Form onSubmit={handleLogin}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
               <Form.Control
-                type="email"
-                placeholder="Enter email"
+                type="name"
+                placeholder="Nama Lengkap"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Group>
-
+            <Form.Group className="text-start mb-3" controlId="formBasicEmail">
+              <Form.Control
+                type="email"
+                placeholder="Alamat email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
             <Form.Group className="text-start mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -97,35 +101,39 @@ const LoginPage = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-
-            {/* Forgot Password on the right */}
-            <p className="text-end mt-2">
-              <a href="#">Forgot Password?</a>
-            </p>
-            
-              <Button variant="primary" type="submit" style={{ backgroundColor: '#34745C' }}>
-                Login
-              </Button>
-           
-
+            <Button
+              variant="secondary"
+              type="submit"
+              style={{
+                backgroundColor: '#34745C',
+                display: 'block',
+                margin: 'auto',
+                height: '35px',
+                width:'220px'
+                }}>
+              Sign Up
+            </Button>
             {/* Register below the login button */}
-            <p className="mt-3 text-center">
-              Belum Punya Akun? <a href="#">Register</a>
+            <p className="mt-3 text-center mb-5">
+              Sudah Punya Akun? <a href="#" style={{color:'#34745C'}}>Masuk</a>
             </p>
           </Form>
         </Col>
-
         {/* Image on the Right */}
-        <Col md={6} className="login-image text-center">
+        <Col className="image-login" >
           <img
             src={fotologin}
             alt="Login Image"
-            className="img-fluid"
-          />
+            className="img-fluid "
+            style={{width:'450px',
+            borderRadius: '10px',
+          }}/>
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default LoginPage;
+
+
+export default Register

@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 
 
 import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
+import Login from './pages/Login'
+import Register from './pages/Register'
 import UserProfile from './pages/UserProfile'
 import TentangKami from './pages/TentangKami'
 import Informasi from './pages/Informasi'
@@ -25,8 +25,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="Login" element={<LoginPage />} />
-        <Route path="Register" element={<RegisterPage />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="Register" element={<Register />} />
         <Route path="userprofile" element={<UserProfile />} />
         <Route path="tentangkami" element={<TentangKami />} />
         <Route path="Informasi" element={<Informasi />} />

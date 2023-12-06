@@ -1,9 +1,8 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import konsultasi from '../images/konsultasi.png'
 
-import '../css/konsultasi.css';
+
 import Card from 'react-bootstrap/Card';
 import Pakar1 from '../images/pakar1.png';
 import Pakar2 from '../images/pakar2.png';

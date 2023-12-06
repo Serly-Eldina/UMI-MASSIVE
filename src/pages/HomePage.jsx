@@ -1,220 +1,181 @@
+import { Container, Row, Col, Button, Image,Card,CardGroup} from 'react-bootstrap';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import beranda1 from '../images/beranda1.png';
-import Card from 'react-bootstrap/Card';
-import rencana1 from '../images/rencana1.png';
-import rencana2 from '../images/rencana2.png';
-import rencana3 from '../images/rencana3.png';
-import nutrisi from '../images/nutrisi.png';
-import gabung from '../images/gabung.png';
+import rencana1 from '../images/rencana1.png'
+import rencana2 from '../images/rencana2.png'
+import rencana3 from '../images/rencana3.png'
+import nutrisi from '../images/nutrisi.png'
+import gabung from '../images/gabung.png'
 import janda from '../images/jandabolong.png';
 import buttonwood from '../images/buttonwood.png';
 import peony from '../images/peony.png';
 import sepatu from '../images/bungasepatu.png';
-import user from '../images/user.png'
+// import user from '../images/user.png'
 
-import '../css/hompage.css'
-
-
-
-
-
-const Home = () => {
+const HomePage = () => {
   return (
     <>
+      {/* header */}
+      <div>
+      <Container fluid className='mt-4 mb-4'>
+        <Row className="justify-content-center align-items-center">
 
-      <div className="col-md-12">
-        <div className='container1'>
-
-          <div className='col-md-8'>
-            <div className='container2'>
-              <p>Mulailah untuk Merawat Tanaman</p>
-              <p>Hiasmu</p>
-              <p>Selamat datang di Tanaman Hias, di mana setiap detik adalah perjalanan</p>
-              <p>baru dalam merawat kehidupan hijau. Mari jelajahi, belajar, dan berbagi</p>
-              <p>cinta terhadap tanaman hias. Inilah tempatnya, di mana setiap kuncup</p>
-              <p>adalah awal dari petualangan yang tak terlupakan.</p>
-              <button type="button" className="btn btn-success" >Selengkapnya</button>
-            </div>
-          </div>
-
-          <div className='col-md-4'>
-            <div className='container3'>
-              <img
-                src={beranda1}
-                alt="Login Image"
-              />
-            </div>
-          </div>
-
-        </div>
+          <Col md lg={{ span: 6, offset: 1 }} className='d-flex align-items-center'>
+            <Container className="mt-5">
+              <h1>Mulailah untuk Merawat Tanaman Hiasmu</h1><br />
+              <p style={{ textAlign: 'justify' }}>
+                Selamat datang di Tanaman Hias, di mana setiap detik adalah perjalanan
+                baru dalam merawat kehidupan hijau. Mari jelajahi, belajar, dan berbagi
+                cinta terhadap tanaman hias. Inilah tempatnya, di mana setiap kuncup
+                adalah awal dari petualangan yang tak terlupakan.
+              </p><br />
+              <Button type="button" className="btn btn-secondary btn-custom" >Selengkapnya</Button>
+            </Container>
+          </Col>
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+            <Image style={{ width: "90%", height: "90%" }}
+              src={beranda1}
+              alt="Login Image"
+              className="img-fluid mt-3"
+            />
+          </Col>
+        </Row>
+      </Container>
       </div>
+      {/* header */}
+      {/* mulai rencana */}
+      <div>
+      <Container className='mt-5 mb-5'>
+        <Row className="justify-content-center pt-5">
+          <Col className='mt-4 pt-4 text-center'>
+            <h2>Memulai Rencana Anda dengan benar</h2>
+            <h4>Ikuti Instruksi untuk lebih lanjut</h4>
+          </Col>
+        </Row>
 
-      <div style={{paddingTop:'50px'}} className='col-md-12'>
-        <div className='rencana'>
-          <div className='judul'>
-            <p>Memulai Rencana Anda dengan benar</p>
-            <p>Ikuti Instruksi untuk lebih lanjut</p>
-          </div>
+        <Row className="justify-content-center">
+          <Col sm={4} className='isi1 mt-4 pt-4 d-flex flex-column align-items-center'>
+            <img src={rencana1} alt="rencana1" className="mb-4" />
+            <h5 className="text-center">Penyiraman yang Tepat</h5>
+            <p style={{ textAlign: 'justify' }}>
+              Tentukan jadwal penyiraman berdasarkan jenis tanaman, kondisi iklim,
+              dan musim. Pastikan tanah tidak terlalu kering atau terlalu basah.
+            </p>
+          </Col>
 
-          <div className='isi'>
+          <Col sm={4} className='isi2 mt-4 pt-4 d-flex flex-column align-items-center'>
+            <img src={rencana2} alt="rencana2" className="mb-4" />
+            <h5 className="text-center">Pemupukan Rutin</h5>
+            <p style={{ textAlign: 'justify' }}>
+              Berikan tanaman nutrisi yang diperlukan dengan memilih pupuk
+              yang sesuai dengan jenis tanaman dan fase pertumbuhannya.
+            </p>
+          </Col>
 
-            <div className='col-md-4'>
-              <div className='isi1'>
-                <div style={{ width: '18rem' }}>
-                  <img src={rencana1} />
-                  <div>
-                    <div style={{ fontWeight: 'bolder' }}>Penyiraman yang Tepat</div>
-                    <div className='textrencana' style={{ marginTop: '23px' }}>
-                      Tentukan jadwal penyiraman berdasarkan jenis tanaman, kondisi iklim, dan musim. Pastikan tanah tidak terlalu kering atau terlalu basah.
-                    </div>
-                  </div>
-                </div>
-              </div> </div>
-
-            <div className='col-md-4'>
-              <div className='isi2'>
-                <div style={{ width: '18rem' }}>
-                  <img src={rencana2} />
-                  <div>
-                    <div style={{ fontWeight: 'bolder' }}>Pemupukan Rutin</div>
-                    <div className='textrencana' style={{ marginTop: '23px' }}>
-                      Berikan tanaman nutrisi yang diperlukan dengan memilih pupuk yang sesuai dengan jenis tanaman dan fase pertumbuhannya.
-                    </div>
-                  </div>
-                </div></div></div>
-
-            <div className='col-md-4'>
-              <div className='isi3'>
-                <div style={{ width: '18rem' }}>
-                  <img src={rencana3} />
-                  <div>
-                    <div style={{ fontWeight: 'bolder' }}>Perhatikan Pencahayaan</div>
-                    <div className='textrencana' style={{ marginTop: '23px' }}>
-                      Beberapa tanaman membutuhkan sinar matahari langsung, dan ada yang di tempat teduh Pahami preferensi pencahayaan tanaman Anda.
-                    </div>
-                  </div>
-                </div></div></div>
-          </div>
-        </div>
+          <Col sm={4} className='isi3 mt-4 pt-4 d-flex flex-column align-items-center'>
+            <img src={rencana3} alt="rencana3" className="mb-4" />
+            <h5 className="text-center">Perhatikan Pencahayaan</h5>
+            <p style={{ textAlign: 'justify' }}>
+              Beberapa tanaman membutuhkan sinar matahari langsung, dan ada yang
+              di tempat teduh. Pahami preferensi pencahayaan tanaman Anda.
+            </p>
+          </Col>
+        </Row>
+      </Container >
       </div>
+      {/* mulai rencana */}
+      {/* nutrisi */}
+      <Container fluid className='mt-6 pt-5 px-4 py-5 mb-6'>
+        <Row className="justify-content-center align-items-center">
 
-      <div className='col-md-12'>
-        <div className='nutrisi'>
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+            <Image src={nutrisi} style={{ width: "80%", height: "80%" }}
+              alt="gambar tunas" />
+          </Col>
 
-          <div className='col-md-5'>
-            <div className='gambarnutrisi'>
-              <img
-                src={nutrisi}
-                alt="Login Image"
-              />
-            </div></div>
+          <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center pt-5'>
+            <h3>Penuhi Nutrisi tanaman anda dengan baik</h3> <br />
+            <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat. <br />
+              2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. <br />
+              3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K). <br />
+              4. Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. <br />
+              5. Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</p>
+          </Col>
+        </Row>
+      </Container>
+      {/* nutrisi */}
+      {/* bergabung */}
+      <Container fluid className='mt-5 pt-5 px-4 py-5 mb-5'>
+        <Row className="justify-content-center align-items-center">
 
-          <div className='col-md-7'>
-            <div className='textnutrisi'>
-              <div className='judulnutrisi' style={{ width: '500px' }}>Penuhi Nutrisi tanaman anda dengan baik</div>
+          <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center'>
+            <h3>Bergabung bersama kami untuk merawat tanaman anda</h3> <br />
+            <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.<br />
+              2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  <br />
+              3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
+          </Col>
+          <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center px-2' >
+            <Image src={gabung} style={{ width: "80%", height: "80%" }}
+              alt="gambar kanan" />
+          </Col>
+        </Row>
+      </Container>
+      {/* bergabung */}
 
-              <div className='listnutrisi'>
-                <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat.</p>
-                <p>2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. </p>
-                <p>3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K).</p>
-                <p>4. Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. </p>
-                <p>5. Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</p>
-              </div>
+      {/* artikel */}
+      <Container className='mb-4'>
+        <h3>Artikel</h3>
+      </Container>
 
-            </div></div>
+      <CardGroup className="mx-5 px-4 mb-4 pb-4">
+      <Card className="mb-3 mx-4">
+        <Card.Img src={janda}  />
+        <Card.Body>
+          <Card.Title>Janda Bolong (Monstera)</Card.Title>
+          <Card.Text>
+          Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi 
+          tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
-        </div>
-      </div>
+      <Card className="mb-3 mx-4">
+        <Card.Img src={buttonwood} />
+        <Card.Body>
+          <Card.Title>Pohon Buttonwood</Card.Title>
+          <Card.Text>
+          Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, 
+          selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.    
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
-      <div className='col-md-12'>
-        <div className='gabung'>
-
-          <div className='col-md-6'>
-            <div className='textgabung'>
-              <div className='judulnutrisi' style={{ width: '500px' }}>Bergabung bersama kami
-                untuk merawat tanaman anda</div>
-              <div className='listgabung'>
-                <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.</p>
-                <p>2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  </p>
-                <p>3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
-              </div>
-            </div></div>
-
-          <div className='col-md-6'>
-            <div className='gambargabung'>
-              <img
-                src={gabung}
-                alt="Login Image"
-              />
-            </div></div>
-
-        </div></div>
-
-      <div className='col-md-12'>
-        <div className='artikel'>
-          <p>Artikel</p>
-
-
-          <div className='artikel1'>
-
-            <div className='col-md-3'>
-              <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', marginLeft: '22%', marginTop: '10px' }}>
-                <img src={janda} />
-                <Card.Body>
-                  <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Janda Bolong (Monstera)</Card.Title>
-                  <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                    Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
-                  </Card.Text>
-                  <img src={user} />
-                </Card.Body>
-              </Card>
-              </a>
-            </div>
-
-            <div className='col-md-3'>
-              <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', margin: '10px', marginLeft: '15%' }}>
-                <img src={buttonwood} />
-                <Card.Body>
-                  <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Pohon Buttonwood</Card.Title>
-                  <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                    Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.
-                  </Card.Text>
-                  <img src={user} style={{ marginTop: '25px' }} />
-                </Card.Body>
-              </Card></a></div>
-
-            <div className='col-md-3'>
-              <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', margin: '10px', marginLeft: '8%' }}>
-                <img src={peony} />
-                <Card.Body>
-                  <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Bunga Peony</Card.Title>
-                  <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                    Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, dan Amerika Utara hingga Barat.
-                  </Card.Text>
-                  <img src={user} style={{ marginTop: '73px' }} />
-                </Card.Body>
-              </Card></a></div>
-
-            <div className='col-md-3'>
-              <a className="fb" href="#"><Card style={{ width: '270px', height: '530px', margin: '10px', marginLeft: '0%' }}>
-                <img src={sepatu} />
-                <Card.Body>
-                  <Card.Title style={{ fontWeight: 'bold', color: '#044F1E', fontSize: '19px' }}>Bunga Sepatu</Card.Title>
-                  <Card.Text style={{ fontSize: '16px', marginTop: '20px' }}>
-                    Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
-                  </Card.Text>
-                  <img src={user} style={{ marginTop: '26px' }} />
-                </Card.Body>
-              </Card></a></div>
-
-          </div>
-        </div> </div>
-
-      
+      <Card className="mb-3 mx-4">
+        <Card.Img src={peony}/>
+        <Card.Body>
+          <Card.Title>Bunga Peony</Card.Title>
+          <Card.Text>
+          Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, 
+          dan Amerika Utara hingga Barat.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card className="mb-3 mx-4">
+        <Card.Img src={sepatu}/>
+        <Card.Body>
+          <Card.Title>Bunga Sepatu</Card.Title>
+          <Card.Text>
+          Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini 
+          sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+        {/* artikel */}
 
     </>
   )
 }
 
-export default Home
+export default HomePage
