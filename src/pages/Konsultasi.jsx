@@ -1,9 +1,9 @@
-
+import { Container, Row, Col, Button, Image,Card,CardGroup} from 'react-bootstrap';
 
 import konsultasi from '../images/konsultasi.png'
 
 
-import Card from 'react-bootstrap/Card';
+
 import Pakar1 from '../images/pakar1.png';
 import Pakar2 from '../images/pakar2.png';
 import Pakar3 from '../images/pakar3.png';
@@ -12,81 +12,70 @@ const Konsultasi = () => {
   return (
     <>
       
-      <div className='container1'>
-        <div className='cold-md-5'>
-          <div className='gambar-konsultasi'>
-            <img
-              src={konsultasi}
-              alt=""
-              align="right"
-              style={{
-                // height: '450px',
-                width: '500px',
-                marginRight: '5%',
-              }}
-            />
-            <div className="col-md-7">
-              <div className="teks-konsultasi">
-                <h3>Tanaman Hias mu punya masalah ?</h3>
-                <p>
-                  Temukan solusi terkait permasalahan anda dalam merawat tanaman
+      <Container fluid className='mt-4 mb-5 pb-5'>
+        <Row className="justify-content-center align-items-center">
+
+          <Col md lg={{ span: 6, offset: 1 }} className='d-flex align-items-center'>
+            <Container className="mt-5">
+              <h1>Tanaman Hias mu punya masalah ?</h1><br />
+              <p style={{ textAlign: 'justify' }}>
+              Temukan solusi terkait permasalahan anda dalam merawat tanaman
                   hias dengan para ahlinya, selain itu anda juga bisa bertanya
                   tentang apapun seputar tanaman hias.
-                </p>
-                {/* <button type="button" class="btn btn-primary"
-                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                  Custom button
-                </button> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div >
-      <div style={{ paddingTop: '50px' }} className='col-md-12'>
-        <div className='judul'>
-          <p>Rekomendasi Pakar</p>
-          <p>Pilih pakar sesuai kebutuhan anda </p>
-        </div>
-      </div>
-      <div className='pakar'>
+              </p><br />
+              <Button type="button" className="btn btn-secondary btn-custom" >Mulaisekarang</Button>
+            </Container>
+          </Col>
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+            <Image style={{ width: "100%", height: "100%" }}
+              src={konsultasi}
+              alt="Login Image"
+              className="img-fluid mt-3"
+            />
+          </Col>
+        </Row>
+      </Container>
+      
+      <Container className='mb-4 pt-5 mt-5'>
+        <h3>Rekomendasi Pakar</h3>
+        <h5>Pilih pakar sesuai kebutuhan anda</h5>
+      </Container>
 
-        <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', marginLeft: '10%', marginTop: '10px' }}>
-            <img src={Pakar1} />
-            <Card.Body>
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Budi Gunawan</Card.Title>
-              <Card.Text style={{ fontSize: '16px' }}>Ahli tanaman</Card.Text>
-              <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px', margin: '15px' }}>Rp.10.000</Card.Title>
-            </Card.Body>
-          </Card>
-          </a>
-        </div>
-        <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', margin: '10px', marginLeft: '40%' }}>
-            <img src={Pakar2} />
-            <Card.Body>
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Karin marina</Card.Title>
-              <Card.Text style={{ fontSize: '16px' }}>Ahli tanaman</Card.Text>
-              <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px', margin: '15px' }}>Rp.10.000</Card.Title>
-            </Card.Body>
-          </Card>
-          </a>
-        </div>
-        <div className='col-md-3'>
-          <a className="fb" href="#"><Card style={{ width: '400px', height: '530px', margin: '10px', marginLeft: '70%' }}>
-            <img src={Pakar3} />
-            <Card.Body>
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px' }}>Dewi Santika</Card.Title>
-              <Card.Text style={{ fontSize: '16px' }}>Ahli tanaman</Card.Text>
-              <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
-              <Card.Title style={{ fontWeight: 'bold', color: 'black', fontSize: '19px', margin: '15px' }}>Rp.10.000</Card.Title>
-            </Card.Body>
-          </Card>
-          </a>
-        </div>
-      </div>
+      <CardGroup className="mx-5 px-4 mb-4 pb-4">
+      <Card className="mb-3 mx-4">
+        <Card.Img src={Pakar1}  />
+        <Card.Body>
+          <Card.Title>Budi Gunawan</Card.Title>
+          <Card.Text>
+          Ahli tanaman
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
+      <Card className="mb-3 mx-4">
+        <Card.Img src={Pakar2} />
+        <Card.Body>
+          <Card.Title>Karin Marina</Card.Title>
+          <Card.Text>
+          Ahli tanaman
+          </Card.Text>
+          <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> <img src={Start} /> (1121)
+        </Card.Body>
+      </Card>
+
+      <Card className="mb-3 mx-4">
+        <Card.Img src={Pakar3}/>
+        <Card.Body>
+          <Card.Title>Dewi Santika</Card.Title>
+          <Card.Text>
+          Ahli tanaman
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      
+    </CardGroup>
+    
+      {/* batas baru */}
       
     </>
   )
