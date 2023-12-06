@@ -102,7 +102,7 @@ const informasi = () => {
 
                     <div className='tipsbaris' style={{ marginTop: '50px' }}>
                         <div className='col-md-3'>
-                            <a className="fb" href="#">
+                            <a className="fb" href="LidahMertua">
                                 <Card className='kotaktips' style={{ height: '350px' }}>
                                     <img src={tips1} />
                                     <Card.Body>
@@ -212,7 +212,7 @@ const informasi = () => {
                     </div>
                     <div className='tipsbaris'>
                         <div className='col-md-3'>
-                            <a className="fb" href="#">
+                            <a className="fb" href="Aglaonema">
                                 <Card className='kotaktips' style={{ height: '350px' }}>
                                     <img src={tips9} />
                                     <Card.Body>
