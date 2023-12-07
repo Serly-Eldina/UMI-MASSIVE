@@ -2,16 +2,16 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-import gambaraglaonema from '../images/gambaraglaonema.png';
+import gambaraloevera from '../images/gambaraloevera.png';
 
-const Aglaonema = () => {
+const Aloevera = () => {
   return (
     <>
     <Container className=''>
       <Row className='tips-lidahmertua text-center pt-5'>
         <Col>
-          <h2 className='judul'>Cara Merawat Tanaman Hias Aglaonema</h2>
-          <img className='gambarlidah img-fluid pt-4'  src={gambaraglaonema} alt='Aglaonema' />
+          <h2 className='judul'>Cara Merawat Tanaman Hias Aloe Vera</h2>
+          <img className='gambarlidah img-fluid pt-4'  src={gambaraloevera} alt='aloevera' />
         </Col>
       </Row>
       </Container>
@@ -21,9 +21,9 @@ const Aglaonema = () => {
         <Col className='bahan pt-5'>
           <h5 >Bahan Yang Diperlukan :</h5>
           <ul>
-            <li>Siapkan pot untuk tanaman Agloenema</li>
-            <li>Siapkan tanah sebagai media tanam</li>
-            <li>Siapkan tanaman Aglaoenema</li>
+            <li>Siapkan pot untuk tanaman Aloe Vera</li>
+            <li>Siapkan pupuk sebagai media tanam</li>
+            <li>Siapkan tanaman Aloe Vera</li>
           </ul>
           
         </Col>
@@ -47,10 +47,12 @@ const Aglaonema = () => {
         <Col className='pt-4 '>
         <h5>Hal yang harus diperhatikan :</h5>
         <ul>
-          <li>Jangan terlalu sering disiram</li>
-          <li>Tempatkan diruangan yang teduh</li>
-          <li>Berikan Pupuk</li>
-          <li>Gunakan Pestisida</li>
+          <li>Biarkan kering</li>
+          <li>Banyak orang yang salah paham bahwa semakin banyak air yang diberikan akan membuat tanaman hidup.</li>
+          <li>Beri lebih banyak sinar matahari</li>
+          <li>Jangan memberikan pot kecil</li>
+          <li>Suhu yang tepat</li>
+          <li>Beri pupuk secukupnya</li>
         </ul>
 
         </Col>
@@ -60,4 +62,4 @@ const Aglaonema = () => {
   );
 };
 
-export default Aglaonema;
+export default Aloevera;
