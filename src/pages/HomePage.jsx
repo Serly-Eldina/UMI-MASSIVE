@@ -97,7 +97,7 @@ const HomePage = () => {
           </Col>
 
           <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center pt-5'>
-            <h3>Penuhi Nutrisi tanaman anda dengan baik</h3> <br />
+            <h2>Penuhi Nutrisi tanaman anda dengan baik</h2> <br />
             <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat. <br />
               2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. <br />
               3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K). <br />
@@ -112,7 +112,7 @@ const HomePage = () => {
         <Row className="justify-content-center align-items-center">
 
           <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center'>
-            <h3>Bergabung bersama kami untuk merawat tanaman anda</h3> <br />
+            <h2>Bergabung bersama kami untuk merawat tanaman anda</h2> <br />
             <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.<br />
               2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  <br />
               3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
@@ -127,50 +127,50 @@ const HomePage = () => {
 
       {/* artikel */}
       <Container className='mb-4'>
-        <h3>Artikel</h3>
+        <h2>Artikel</h2>
       </Container>
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4">
       <Card className="mb-3 mx-4">
         <Card.Img src={janda}  />
         <Card.Body>
-          <Card.Title>Janda Bolong (Monstera)</Card.Title>
-          <Card.Text>
+          <h3><Card.Title>Janda Bolong (Monstera)</Card.Title></h3>
+         <h6> <Card.Text>
           Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi 
           tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
-          </Card.Text>
+          </Card.Text></h6>
         </Card.Body>
       </Card>
 
       <Card className="mb-3 mx-4">
         <Card.Img src={buttonwood} />
         <Card.Body>
-          <Card.Title>Pohon Buttonwood</Card.Title>
-          <Card.Text>
+         <h3><Card.Title>Pohon Buttonwood</Card.Title></h3> 
+         <h6> <Card.Text>
           Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, 
           selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.    
-          </Card.Text>
+          </Card.Text></h6>
         </Card.Body>
       </Card>
 
       <Card className="mb-3 mx-4">
         <Card.Img src={peony}/>
         <Card.Body>
-          <Card.Title>Bunga Peony</Card.Title>
-          <Card.Text>
+          <h3><Card.Title>Bunga Peony</Card.Title></h3>
+         <h6> <Card.Text>
           Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, 
           dan Amerika Utara hingga Barat.
-          </Card.Text>
+          </Card.Text></h6>
         </Card.Body>
       </Card>
       <Card className="mb-3 mx-4">
         <Card.Img src={sepatu}/>
         <Card.Body>
-          <Card.Title>Bunga Sepatu</Card.Title>
-          <Card.Text>
+          <h3><Card.Title>Bunga Sepatu</Card.Title></h3>
+          <h6><Card.Text>
           Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini 
           sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
-          </Card.Text>
+          </Card.Text></h6>
         </Card.Body>
       </Card>
     </CardGroup>
