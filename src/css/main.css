@@ -24,6 +24,16 @@ h5{
   color: #044F1E;
   font-weight: bolder;
 }
+h6{
+  color:#242424
+ 
+}
+
+card{
+color: #242424;
+font-size: 12px;
+  }
+
 
 .btn-custom{
 background-color:#34745C ;

@@ -34,8 +34,8 @@ const Informasi = () => {
         <Row className="justify-content-center align-items-center">
 
           <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center'>
-            <h2>Apa Itu Tanaman Hias ?</h2> <br />
-            <p>Tanaman hias merupakan tumbuhan yang biasa
+            <h1>Apa Itu Tanaman Hias ?</h1> <br />
+           <h6><p>Tanaman hias merupakan tumbuhan yang biasa
               ditanam orang sebagai hiasan. Umumnya pengertian hiasan adalah hiasan di dalam rumah,
               atau tamantaman umum, karena di ditanam di rumah atau ditanam di taman, otomatis
               ukuran tanam tidak terlalu besar dan rimbun. Pada umumnya tanaman hias dapat di
@@ -43,7 +43,7 @@ const Informasi = () => {
               merupakan tanaman hias dengan bagian bunga yang menarik. Adapun tanaman hias daun
               merupakan tanaman daun yang menarik. Dalam hal ini perlu di ketahui bahwa organ
               daun terdiri dari pelepah, tangkai, dan helaian oleh karena itu tanaman yang
-              mempunyai pelepah menarik.</p>
+              mempunyai pelepah menarik.</p></h6> 
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center'  >
             <Image src={apaitu} style={{ width: "90%", height: "90%" }}
@@ -55,7 +55,7 @@ const Informasi = () => {
       <Container className='mb-5 pb-5'>
         <Row className="justify-content-center pt-5">
           <Col >
-            <h3>Jenis Tanah</h3>
+            <h2>Jenis Tanah</h2>
             <p>Berikut jenis Tanah Yang Bagus Untuk Tanaman Hias</p>
           </Col>
         </Row>
@@ -117,44 +117,44 @@ const Informasi = () => {
         <Card className="mb-3 mx-4">
           <Card.Img src={tips1} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lidah Mertua</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lidah Mertua</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Tanaman lidah mertua dikenal juga dengan sebutan Sansevieria. Bentuknya berupa daun panjang
               dan runcing degan tekstur tebal dan keras. lidah mertua juga mampu menyerap karbon monoksida
               dan karbon dioksida
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
 
         <Card className="mb-3 mx-4">
           <Card.Img src={tips2} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Sirih Gading</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Sirih Gading</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Sirih gading termasuk tanaman hias dalam ruangan yang sangat mudah dirawat.Tanaman hias dalam
               ruangan ini bisa tumbuh dengan baik ketika ditanam melalui media tanah maupun air.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
 
         <Card className="mb-3 mx-4">
           <Card.Img src={tips3} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Peace Lily</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Peace Lily</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Tanaman hias lili perdamaian juga termasuk salah satu tanaman yang cocok di dalam ruangan
               karena mampu menyerap polutan dengan baik.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
         <Card className="mb-3 mx-4">
           <Card.Img src={tips4} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aloe Vera</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+           <h3> <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aloe Vera</Card.Title></h3>
+           <card> <Card.Text style={{ textAlign: 'justify' }}>
               Aloe vera atau lidah buaya dapat tumbuh subur di dalam ruangan. Tanaman ini juga menyukai
               cahaya matahari yang tidak langsung, jadi memang baik untuk diletakkan di teras atau dalam ruangan.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
       </CardGroup>
@@ -175,46 +175,46 @@ const Informasi = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4" >
         <Card className="mb-3 mx-4">
-          <Card.Img src={tips1} />
+        <Card.Img src={tips1} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lidah Mertua</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lidah Mertua</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Tanaman lidah mertua dikenal juga dengan sebutan Sansevieria. Bentuknya berupa daun panjang
               dan runcing degan tekstur tebal dan keras. lidah mertua juga mampu menyerap karbon monoksida
               dan karbon dioksida
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
 
         <Card className="mb-3 mx-4">
           <Card.Img src={tips2} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Sirih Gading</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Sirih Gading</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Sirih gading termasuk tanaman hias dalam ruangan yang sangat mudah dirawat.Tanaman hias dalam
               ruangan ini bisa tumbuh dengan baik ketika ditanam melalui media tanah maupun air.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
 
         <Card className="mb-3 mx-4">
           <Card.Img src={tips3} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Peace Lily</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Peace Lily</Card.Title></h3>
+            <card><Card.Text style={{ textAlign: 'justify' }}>
               Tanaman hias lili perdamaian juga termasuk salah satu tanaman yang cocok di dalam ruangan
               karena mampu menyerap polutan dengan baik.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
         <Card className="mb-3 mx-4">
           <Card.Img src={tips4} />
           <Card.Body>
-            <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aloe Vera</Card.Title>
-            <Card.Text style={{ textAlign: 'justify' }}>
+           <h3> <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aloe Vera</Card.Title></h3>
+           <card> <Card.Text style={{ textAlign: 'justify' }}>
               Aloe vera atau lidah buaya dapat tumbuh subur di dalam ruangan. Tanaman ini juga menyukai
               cahaya matahari yang tidak langsung, jadi memang baik untuk diletakkan di teras atau dalam ruangan.
-            </Card.Text>
+            </Card.Text></card>
           </Card.Body>
         </Card>
       </CardGroup>

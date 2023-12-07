@@ -44,15 +44,15 @@ const TentangKami = () => {
                     </Col>
                     <Col md={6} className='d-flex align-items-center'>
                         <Container className="m-5">
-                            <h2>Tentang Kami</h2>
-                            <p style={{ textAlign: 'justify' }}>
+                            <h1>Tentang Kami</h1>
+                            <h4><p style={{ textAlign: 'justify' }}>
                                 Selamat datang di platform kami! Kami adalah sebuah aplikasi
                                 mobile dan situs web yang didedikasikan untuk menyediakan sumber
                                 daya informatif seputar tanaman hias. Dengan fokus pada
                                 mempermudah masyarakat dalam menanam dan merawat tanaman hias,
                                 kami menghadirkan berbagai fitur yang dirancang untuk memenuhi
                                 kebutuhan para penggemar tanaman hias.
-                            </p>
+                            </p></h4>
                         </Container>
                     </Col>
                 </Row>
@@ -65,7 +65,7 @@ const TentangKami = () => {
             <Container>
                 <Row className="justify-content-center"> {/* Added justify-content-center class */}
                     <Col className='mt-4 pt-4 text-center'> {/* Added text-center class for centering text */}
-                        <h3>Layanan Yang Anda Dapatkan</h3>
+                        <h2>Layanan Yang Anda Dapatkan</h2>
                         <h4>Ikuti Instruksi untuk lebih lanjut</h4>
                     </Col>
                 </Row>
@@ -97,13 +97,13 @@ const TentangKami = () => {
                 <Row className="justify-content-center align-items-center">
                     <Col md lg={{ span: 5, offsite: 1 }} className='d-flex align-items-center '>
                         <Container >
-                            <h3>Dapatkan Versi Aplikasi</h3>
-                            <p style={{ textAlign: 'justify' }}>
+                            <h2>Dapatkan Versi Aplikasi</h2>
+                            <h4><p style={{ textAlign: 'justify' }}>
                                 Optimalkan pengalaman pengguna Anda dengan mendapatkan versi aplikasi kami sekarang!
                                 Dengan aplikasi kami, nikmati akses cepat, fitur eksklusif, dan pengalaman yang dioptimalkan,
                                 memberikan Anda kontrol penuh atas perjalanan digital dilengkapi dengan fitur pengingat untuk
                                 mengoptimalkan kebutuhan anda. unduh aplikasi kami sekarang!
-                            </p>
+                            </p></h4>
                             <Button variant="dark" size='lg'>
                                 <img src={gplay} alt="" />
 

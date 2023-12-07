@@ -135,10 +135,10 @@ const HomePage = () => {
         <Card.Img src={janda}  />
         <Card.Body>
           <h3><Card.Title>Janda Bolong (Monstera)</Card.Title></h3>
-         <h6> <Card.Text>
+         <card> <Card.Text>
           Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi 
           tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
-          </Card.Text></h6>
+          </Card.Text></card>
         </Card.Body>
       </Card>
 
@@ -146,10 +146,10 @@ const HomePage = () => {
         <Card.Img src={buttonwood} />
         <Card.Body>
          <h3><Card.Title>Pohon Buttonwood</Card.Title></h3> 
-         <h6> <Card.Text>
+         <card> <Card.Text>
           Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, 
           selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.    
-          </Card.Text></h6>
+          </Card.Text></card>
         </Card.Body>
       </Card>
 
@@ -157,20 +157,20 @@ const HomePage = () => {
         <Card.Img src={peony}/>
         <Card.Body>
           <h3><Card.Title>Bunga Peony</Card.Title></h3>
-         <h6> <Card.Text>
+         <card> <Card.Text>
           Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, 
           dan Amerika Utara hingga Barat.
-          </Card.Text></h6>
+          </Card.Text></card>
         </Card.Body>
       </Card>
       <Card className="mb-3 mx-4">
         <Card.Img src={sepatu}/>
         <Card.Body>
           <h3><Card.Title>Bunga Sepatu</Card.Title></h3>
-          <h6><Card.Text>
+          <card><Card.Text>
           Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini 
           sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
-          </Card.Text></h6>
+          </Card.Text></card>
         </Card.Body>
       </Card>
     </CardGroup>
