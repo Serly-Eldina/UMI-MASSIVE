@@ -11,7 +11,7 @@ const Aglaonema = () => {
       <Row className='tips-lidahmertua text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Aglaonema</h2>
-          <img className='gambarlidah pt-4'  src={gambaraglaonema} alt='Aglaonema' />
+          <img className='gambarlidah img-fluid pt-4'  src={gambaraglaonema} alt='Aglaonema' />
         </Col>
       </Row>
       </Container>
