@@ -1,6 +1,6 @@
 
 import { Navbar, Nav, Button, Container, Form } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 import logosementara from '../images/logosementara.png';
 import logonav from '../images/logonav.png';
 
@@ -29,9 +29,11 @@ const NavbarComponent = () => {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Navbar.Brand className="mt-2 mt-lg-0">
-              <img src={logosementara} alt='logo' />
-            </Navbar.Brand>
+            <Link to="/profile" style={{ textDecoration: 'none' }}>
+              <Navbar.Brand className="logo-profile mt-2 mt-lg-0">
+                <img src={logosementara} alt='logo' />
+              </Navbar.Brand>
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

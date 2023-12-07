@@ -1,5 +1,5 @@
-import { Container, Row, Col, Button, Image,Card,CardGroup} from 'react-bootstrap';
-
+import { Container, Row, Col, Button, Image,Card,CardGroup,} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import beranda1 from '../images/beranda1.png';
 import rencana1 from '../images/rencana1.png'
@@ -30,7 +30,9 @@ const HomePage = () => {
                 cinta terhadap tanaman hias. Inilah tempatnya, di mana setiap kuncup
                 adalah awal dari petualangan yang tak terlupakan.
               </p><br />
-              <Button type="button" className="btn btn-secondary btn-custom" >Selengkapnya</Button>
+              <Link to="/Informasi">
+                <Button type="button" className="btn btn-secondary btn-custom" >Selengkapnya</Button>
+              </Link>
             </Container>
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
