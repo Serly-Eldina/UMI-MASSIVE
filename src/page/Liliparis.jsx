@@ -1,10 +1,9 @@
-
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-import gambaraglaonema from '../images/gambaraglaonema.png';
+import gambarliliparis from '../images/gambarliliparis.png';
 
-const Aglaonema = () => {
+const Liliparis = () => {
   return (
     <>
     <Container className=''>
@@ -13,7 +12,7 @@ const Aglaonema = () => {
           <h2 className='judul'>Cara Merawat Tanaman Hias Aglaonema</h2>
           <img
               className='gambarlidah img-fluid pt-4'
-              src={gambaraglaonema}
+              src={gambarliliparis}
               alt='Aglaonema'
               style={{ width: '100%', maxWidth: '600px', height: 'auto' }}
             />
@@ -62,7 +61,7 @@ const Aglaonema = () => {
       </Row>
       </Container>
       </>
-  );
-};
+  )
+}
 
-export default Aglaonema;
+export default Liliparis

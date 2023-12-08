@@ -1,19 +1,18 @@
-
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-import gambaraglaonema from '../images/gambaraglaonema.png';
+import gambarpeacelily from '../images/gambarpeacelily.png';
 
-const Aglaonema = () => {
+const Peacelily = () => {
   return (
     <>
     <Container className=''>
       <Row className='tips-agleonema text-center pt-5'>
         <Col>
-          <h2 className='judul'>Cara Merawat Tanaman Hias Aglaonema</h2>
+          <h2 className='judul'>Cara Merawat Tanaman Hias Peacelily</h2>
           <img
               className='gambarlidah img-fluid pt-4'
-              src={gambaraglaonema}
+              src={gambarpeacelily}
               alt='Aglaonema'
               style={{ width: '100%', maxWidth: '600px', height: 'auto' }}
             />
@@ -26,9 +25,9 @@ const Aglaonema = () => {
         <Col className='bahan pt-5'>
           <h5 >Bahan Yang Diperlukan :</h5>
           <ul>
-            <li>Siapkan pot untuk tanaman Agloenema</li>
+            <li>Siapkan pot untuk tanaman Peacelily</li>
             <li>Siapkan tanah sebagai media tanam</li>
-            <li>Siapkan tanaman Aglaoenema</li>
+            <li>Siapkan tanaman Peacelily</li>
           </ul>
           
         </Col>
@@ -37,8 +36,8 @@ const Aglaonema = () => {
         <Col className='pt-4 '>
         <h5>Tips & Trick</h5>
         <ol type='1'>
-          <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
-            pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
+          <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki 
+            lubang pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
             <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab lidah 
               mertua bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
               <li>Tanamkan bibit tanaman Sansevieria ke dalam media tanam dan biarkanlah selama beberapa 
@@ -61,8 +60,8 @@ const Aglaonema = () => {
         </Col>
       </Row>
       </Container>
-      </>
-  );
-};
+    </>
+  )
+}
 
-export default Aglaonema;
+export default Peacelily

@@ -11,7 +11,10 @@ const Sirihgading = () => {
       <Row className='tips-lidahmertua text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Sirih Gading</h2>
-          <img className='gambarlidah img-fluid pt-4'  src={gambarsirihgading} alt='sirihgading' />
+          <img className='gambarlidah img-fluid pt-4'  
+          src={gambarsirihgading} 
+          alt='sirihgading' 
+          style={{ width: '100%', maxWidth: '600px', height: 'auto' }}/>
         </Col>
       </Row>
       </Container>
