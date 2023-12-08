@@ -7,11 +7,12 @@ import Register from './pages/Register'
 import UserProfile from './pages/UserProfile'
 import TentangKami from './pages/TentangKami'
 import Informasi from './pages/Informasi'
-import LidahMertua from './pages/LidahMertua'
-import Aglaonema from './pages/Aglaonema'
-import Aloevera from './pages/AloeVera'
-import Sirihgading from './pages/SirihGading'
 import Konsultasi from './pages/Konsultasi'
+
+import LidahMertua from './page/LidahMertua'
+import Aglaonema from './page/Aglaonema'
+import Aloevera from './page/AloeVera'
+import Sirihgading from './page/SirihGading'
 
 
 import NavbarComponent from './components/NavbarComponent'
