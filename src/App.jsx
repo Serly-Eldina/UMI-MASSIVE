@@ -15,7 +15,7 @@ import LidahMertua from './page/LidahMertua'
 import Aglaonema from './page/Aglaonema'
 import Aloevera from './page/AloeVera'
 import Sirihgading from './page/SirihGading'
-import Bromeilad from './page/Bromeilad'
+import Bromeila from './page/Bromeila'
 import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
@@ -52,7 +52,7 @@ function App() {
         <Route path="Aglaonema" element={<Aglaonema />} />
         <Route path="Aloevera" element={<Aloevera />} />
         <Route path="Sirihgading" element={<Sirihgading />} />
-        <Route path="Bromeilad" element={<Bromeilad />} />
+        <Route path="Bromeilad" element={<Bromeila />} />
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />

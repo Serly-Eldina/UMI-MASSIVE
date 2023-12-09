@@ -37,9 +37,9 @@ const Sirihgading = () => {
         <ol type='1'>
           <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
             pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
-            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab lidah 
-              mertua bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
-              <li>Tanamkan bibit tanaman Sansevieria ke dalam media tanam dan biarkanlah selama beberapa 
+            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab Sirih Gading
+               bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
+              <li>Tanamkan bibit tanaman Sirih Gading ke dalam media tanam dan biarkanlah selama beberapa 
                 waktu supaya ia bisa tumbuh dengan subur.</li>
               <li>Pastikan juga untuk selalu merawatnya dengan baik sesuai tips yang sudah dijelaskan sebelumnya.</li>
         </ol>

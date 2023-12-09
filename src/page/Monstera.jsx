@@ -25,9 +25,9 @@ const Monstera = () => {
         <Col className='bahan pt-5'>
           <h5 >Bahan Yang Diperlukan :</h5>
           <ul>
-            <li>Siapkan pot untuk tanaman Agloenema</li>
+            <li>Siapkan pot untuk tanaman</li>
             <li>Siapkan tanah sebagai media tanam</li>
-            <li>Siapkan tanaman Aglaoenema</li>
+            <li>Siapkan tanaman Monstera</li>
           </ul>
           
         </Col>
@@ -36,18 +36,17 @@ const Monstera = () => {
         <Col className='pt-4 '>
         <h5>Tips & Trick</h5>
         <ol type='1'>
-          <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
-            pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
-            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab lidah 
-              mertua bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
-              <li>Tanamkan bibit tanaman Sansevieria ke dalam media tanam dan biarkanlah selama beberapa 
-                waktu supaya ia bisa tumbuh dengan subur.</li>
-              <li>Pastikan juga untuk selalu merawatnya dengan baik sesuai tips yang sudah dijelaskan sebelumnya.</li>
+          <li>Perhatikan media tanam janda bolong, kamu bisa memilih menggunakan tanah gambut atau air</li>
+          <li>Penyiraman yang rutin bisa dilakukan dua kali sehari, tetapi jangan sampai berlebihan karena akan membusuk.</li>
+          <li>Letakkan di suhu yang tepat dan penyinaran yang cukup, jangan langsung terkena sinar matahari yang terlalu terik</li>
+          <li>Supaya tumbuh subur, janda bolong perlu kamu beri pupuk di awal penanaman dan saat sudah semakin besar</li>
+          <li>Ganti pot secara berkala jika tanaman sudah membesar dan semakin banyak supaya akar tanaman bisa tumbuh secara leluasa</li>
+          <li>Pasang penyangga dan beri ruang supaya tumbuhan bisa merambat dan tetap tumbuh dengan baik</li>
         </ol>
         </Col>
       </Row>
 
-      <Row >
+      {/* <Row >
         <Col className='pt-4 '>
         <h5>Hal yang harus diperhatikan :</h5>
         <ul>
@@ -58,7 +57,7 @@ const Monstera = () => {
         </ul>
 
         </Col>
-      </Row>
+      </Row> */}
       </Container>
     </>
 
