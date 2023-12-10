@@ -36,8 +36,7 @@ const Aloevera = () => {
             <li>Kedua yaitu perhatikan lubang drainase</li>
               <li>Ketiga yaitu pilih wadah yang memiliki lubang sama</li>
               <li>Selanjutnya yaitu hindari penggunaan tanah kebun</li>
-              <li>Dan terakhir yaitu taburi tanah atau pupuk dengan bubuk hormon 
-                supaya tanamannya cepat bertumbuh</li>
+              <li>Dan terakhir yaitu taburi tanah atau pupuk dengan bubuk hormon supaya tanamannya cepat bertumbuh</li>
         </ol>
         </Col>
       </Row>
