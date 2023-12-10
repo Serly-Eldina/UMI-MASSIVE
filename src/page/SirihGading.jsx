@@ -8,7 +8,7 @@ const Sirihgading = () => {
   return (
     <>
     <Container className=''>
-      <Row className='tips-lidahmertua text-center pt-5'>
+      <Row className='tips-agleonema text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Sirih Gading</h2>
           <img className='gambarlidah img-fluid pt-4'  
