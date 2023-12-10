@@ -8,7 +8,7 @@ const Aloevera = () => {
   return (
     <>
     <Container className=''>
-      <Row className='tips-lidahmertua text-center pt-5'>
+      <Row className='tips-agleonema text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Aloe Vera</h2>
           <img className='gambarlidah img-fluid pt-4'  src={gambaraloevera} alt='aloevera' />
