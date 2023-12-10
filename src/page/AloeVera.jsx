@@ -32,11 +32,11 @@ const Aloevera = () => {
         <Col className='pt-4 '>
         <h5>Tips & Trick</h5>
         <ol type='1'>
-          <li>Pertama tama yaitu pemilihan wadah atau pot</li>
-            <li>Kedua yaitu perhatikan lubang drainase</li>
-              <li>Ketiga yaitu pilih wadah yang memiliki lubang sama</li>
-              <li>Selanjutnya yaitu hindari penggunaan tanah kebun</li>
-              <li>Dan terakhir yaitu taburi tanah atau pupuk dengan bubuk hormon supaya tanamannya cepat bertumbuh</li>
+          <li>Pemilihan wadah atau pot</li>
+            <li>Perhatikan lubang drainase</li>
+              <li>Pilih wadah yang memiliki lubang sama</li>
+              <li>Hindari penggunaan tanah kebun</li>
+              <li>Taburi tanah atau pupuk dengan bubuk hormon supaya tanamannya cepat bertumbuh</li>
         </ol>
         </Col>
       </Row>
