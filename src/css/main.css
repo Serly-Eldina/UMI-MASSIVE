@@ -61,3 +61,13 @@ fotter 34745C */
     display: none;
   }
 }
+
+/* di informasi */
+.card-link {
+  text-decoration: none;
+  color: inherit; /* Wariskan warna dari parent (biasanya warna teks kartu) */
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}

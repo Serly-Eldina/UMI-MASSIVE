@@ -11,7 +11,10 @@ const Sirihgading = () => {
       <Row className='tips-lidahmertua text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Sirih Gading</h2>
-          <img className='gambarlidah img-fluid pt-4'  src={gambarsirihgading} alt='sirihgading' />
+          <img className='gambarlidah img-fluid pt-4'  
+          src={gambarsirihgading} 
+          alt='sirihgading' 
+          style={{ width: '100%', maxWidth: '600px', height: 'auto' }}/>
         </Col>
       </Row>
       </Container>
@@ -34,9 +37,9 @@ const Sirihgading = () => {
         <ol type='1'>
           <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
             pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
-            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab lidah 
-              mertua bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
-              <li>Tanamkan bibit tanaman Sansevieria ke dalam media tanam dan biarkanlah selama beberapa 
+            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab Sirih Gading
+               bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
+              <li>Tanamkan bibit tanaman Sirih Gading ke dalam media tanam dan biarkanlah selama beberapa 
                 waktu supaya ia bisa tumbuh dengan subur.</li>
               <li>Pastikan juga untuk selalu merawatnya dengan baik sesuai tips yang sudah dijelaskan sebelumnya.</li>
         </ol>

@@ -1,16 +1,16 @@
 import { Container, Row, Col, Button, Image,Card,CardGroup,} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import beranda1 from '../images/beranda1.png';
-import rencana1 from '../images/rencana1.png'
-import rencana2 from '../images/rencana2.png'
-import rencana3 from '../images/rencana3.png'
-import nutrisi from '../images/nutrisi.png'
-import gabung from '../images/gabung.png'
-import janda from '../images/jandabolong.png';
-import buttonwood from '../images/buttonwood.png';
-import peony from '../images/peony.png';
-import sepatu from '../images/bungasepatu.png';
+import homeberanda1 from '../images/homeberanda1.png';
+import homerencana1 from '../images/homerencana1.png'
+import homerencana2 from '../images/homerencana2.png'
+import homerencana3 from '../images/homerencana3.png'
+import homenutrisi from '../images/homenutrisi.png'
+import homegabung from '../images/homegabung.png'
+import homejanda from '../images/homejandabolong.png';
+import homebuttonwood from '../images/homebuttonwood.png';
+import homepeony from '../images/homepeony.png';
+import homesepatu from '../images/homebungasepatu.png';
 // import user from '../images/user.png'
 
 const HomePage = () => {
@@ -37,7 +37,7 @@ const HomePage = () => {
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
             <Image style={{ width: "90%", height: "90%" }}
-              src={beranda1}
+              src={homeberanda1}
               alt="Login Image"
               className="img-fluid mt-3"
             />
@@ -58,7 +58,7 @@ const HomePage = () => {
 
         <Row className="justify-content-center">
           <Col sm={4} className='isi1 mt-4 pt-4 d-flex flex-column align-items-center'>
-            <img src={rencana1} alt="rencana1" className="mb-4" />
+            <img src={homerencana1} alt="rencana1" className="mb-4" />
             <h5 className="text-center">Penyiraman yang Tepat</h5>
             <p style={{ textAlign: 'justify' }}>
               Tentukan jadwal penyiraman berdasarkan jenis tanaman, kondisi iklim,
@@ -67,7 +67,7 @@ const HomePage = () => {
           </Col>
 
           <Col sm={4} className='isi2 mt-4 pt-4 d-flex flex-column align-items-center'>
-            <img src={rencana2} alt="rencana2" className="mb-4" />
+            <img src={homerencana2} alt="rencana2" className="mb-4" />
             <h5 className="text-center">Pemupukan Rutin</h5>
             <p style={{ textAlign: 'justify' }}>
               Berikan tanaman nutrisi yang diperlukan dengan memilih pupuk
@@ -76,7 +76,7 @@ const HomePage = () => {
           </Col>
 
           <Col sm={4} className='isi3 mt-4 pt-4 d-flex flex-column align-items-center'>
-            <img src={rencana3} alt="rencana3" className="mb-4" />
+            <img src={homerencana3} alt="rencana3" className="mb-4" />
             <h5 className="text-center">Perhatikan Pencahayaan</h5>
             <p style={{ textAlign: 'justify' }}>
               Beberapa tanaman membutuhkan sinar matahari langsung, dan ada yang
@@ -92,7 +92,7 @@ const HomePage = () => {
         <Row className="justify-content-center align-items-center">
 
           <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
-            <Image src={nutrisi} style={{ width: "80%", height: "80%" }}
+            <Image src={homenutrisi} style={{ width: "80%", height: "80%" }}
               alt="gambar tunas" />
           </Col>
 
@@ -118,7 +118,7 @@ const HomePage = () => {
               3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center px-2' >
-            <Image src={gabung} style={{ width: "80%", height: "80%" }}
+            <Image src={homegabung} style={{ width: "80%", height: "80%" }}
               alt="gambar kanan" />
           </Col>
         </Row>
@@ -132,45 +132,45 @@ const HomePage = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4">
       <Card className="mb-3 mx-4">
-        <Card.Img src={janda}  />
+        <Card.Img src={homejanda}  />
         <Card.Body>
           <h3><Card.Title>Janda Bolong (Monstera)</Card.Title></h3>
-         <card> <Card.Text>
+         <Card.Text>
           Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi 
           tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
-          </Card.Text></card>
+          </Card.Text>
         </Card.Body>
       </Card>
 
       <Card className="mb-3 mx-4">
-        <Card.Img src={buttonwood} />
+        <Card.Img src={homebuttonwood} />
         <Card.Body>
          <h3><Card.Title>Pohon Buttonwood</Card.Title></h3> 
-         <card> <Card.Text>
+         <Card.Text>
           Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, 
           selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.    
-          </Card.Text></card>
+          </Card.Text>
         </Card.Body>
       </Card>
 
       <Card className="mb-3 mx-4">
-        <Card.Img src={peony}/>
+        <Card.Img src={homepeony}/>
         <Card.Body>
           <h3><Card.Title>Bunga Peony</Card.Title></h3>
-         <card> <Card.Text>
+         <Card.Text>
           Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, 
           dan Amerika Utara hingga Barat.
-          </Card.Text></card>
+          </Card.Text>
         </Card.Body>
       </Card>
       <Card className="mb-3 mx-4">
-        <Card.Img src={sepatu}/>
+        <Card.Img src={homesepatu}/>
         <Card.Body>
           <h3><Card.Title>Bunga Sepatu</Card.Title></h3>
-          <card><Card.Text>
+          <Card.Text>
           Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini 
           sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
-          </Card.Text></card>
+          </Card.Text>
         </Card.Body>
       </Card>
     </CardGroup>

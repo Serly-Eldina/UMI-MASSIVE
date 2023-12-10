@@ -32,13 +32,12 @@ const Aloevera = () => {
         <Col className='pt-4 '>
         <h5>Tips & Trick</h5>
         <ol type='1'>
-          <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
-            pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
-            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab lidah 
-              mertua bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
-              <li>Tanamkan bibit tanaman Sansevieria ke dalam media tanam dan biarkanlah selama beberapa 
-                waktu supaya ia bisa tumbuh dengan subur.</li>
-              <li>Pastikan juga untuk selalu merawatnya dengan baik sesuai tips yang sudah dijelaskan sebelumnya.</li>
+          <li>Pertama tama yaitu pemilihan wadah atau pot</li>
+            <li>Kedua yaitu perhatikan lubang drainase</li>
+              <li>Ketiga yaitu pilih wadah yang memiliki lubang sama</li>
+              <li>Selanjutnya yaitu hindari penggunaan tanah kebun</li>
+              <li>Dan terakhir yaitu taburi tanah atau pupuk dengan bubuk hormon 
+                supaya tanamannya cepat bertumbuh</li>
         </ol>
         </Col>
       </Row>

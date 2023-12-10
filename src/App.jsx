@@ -1,4 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+// app.jsx
+import { useEffect } from 'react';
+import { Routes, Route,useLocation } from 'react-router-dom'
 
 
 import HomePage from './pages/HomePage'
@@ -7,11 +9,16 @@ import Register from './pages/Register'
 import UserProfile from './pages/UserProfile'
 import TentangKami from './pages/TentangKami'
 import Informasi from './pages/Informasi'
-import LidahMertua from './pages/LidahMertua'
-import Aglaonema from './pages/Aglaonema'
-import Aloevera from './pages/AloeVera'
-import Sirihgading from './pages/SirihGading'
 import Konsultasi from './pages/Konsultasi'
+
+import LidahMertua from './page/LidahMertua'
+import Aglaonema from './page/Aglaonema'
+import Aloevera from './page/AloeVera'
+import Sirihgading from './page/SirihGading'
+import Bromeila from './page/Bromeila'
+import Liliparis from './page/Liliparis'
+import Monstera from './page/Monstera'
+import Peacelily from './page/Peacelily'
 
 
 import NavbarComponent from './components/NavbarComponent'
@@ -22,6 +29,11 @@ function App() {
   // Membuat array untuk menyimpan path halaman yang tidak memerlukan Navbar dan Footer
   const excludePaths = ['/Login', '/Register'];
 
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Setel ulang scroll ke atas ketika komponen dipasang
+  }, [location.pathname]);
   return (
     <div>
       {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
@@ -34,11 +46,17 @@ function App() {
         <Route path="profile" element={<UserProfile />} />
         <Route path="tentangkami" element={<TentangKami />} />
         <Route path="Informasi" element={<Informasi />} />
+        <Route path="Konsultasi" element={<Konsultasi />} />
+
         <Route path="LidahMertua" element={<LidahMertua />} />
         <Route path="Aglaonema" element={<Aglaonema />} />
         <Route path="Aloevera" element={<Aloevera />} />
         <Route path="Sirihgading" element={<Sirihgading />} />
-        <Route path="Konsultasi" element={<Konsultasi />} />
+        <Route path="Bromeilad" element={<Bromeila />} />
+        <Route path="Liliparis" element={<Liliparis />} />
+        <Route path="Monstera" element={<Monstera />} />
+        <Route path="Peacelily" element={<Peacelily />} />
+        
       </Routes>
 
       {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
