@@ -53,7 +53,7 @@ function App() {
         <Route path="Aglaonema" element={<Aglaonema />} />
         <Route path="Aloevera" element={<Aloevera />} />
         <Route path="Sirihgading" element={<Sirihgading />} />
-        <Route path="Bromeilad" element={<Bromeila />} />
+        <Route path="Bromeila" element={<Bromeila />} />
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
