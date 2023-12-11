@@ -20,6 +20,8 @@ import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
 
+import KonsultanBudi from './page/KonsultanBudi'
+
 
 import NavbarComponent from './components/NavbarComponent'
 import FooterComponent from './components/FooterComponent'
@@ -38,7 +40,7 @@ function App() {
     <div>
       {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
       {!excludePaths.includes(window.location.pathname) && <NavbarComponent />}
-
+        
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="Login" element={<Login />} />
@@ -57,6 +59,8 @@ function App() {
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
         
+        <Route path="KonsultanBudi" element={<KonsultanBudi />} />
+
       </Routes>
 
       {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
