@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, Card, CardGroup } from 'react-bootstrap';
-
-
 import informasi from '../images/informasi.png'
 import infoapaitu from '../images/infoapaitu.png'
 import tanah1 from '../images/tanah1.png'
 import tanah2 from '../images/tanah2.png'
 import tanah3 from '../images/tanah3.png'
-
 import tips1 from '../images/tips1.png'
 import tips2 from '../images/tips2.png'
 import tips3 from '../images/tips3.png'
