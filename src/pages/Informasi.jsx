@@ -176,12 +176,12 @@ const Informasi = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4" >
         <Card className="mb-3 mx-4">
-        <Link to="/Bromeilad" className="card-link">
+        <Link to="/Bromeila" className="card-link">
           <Card.Img src={tips5} />
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Bromeilad</Card.Title></h3>
            <Card.Text style={{ textAlign: 'justify' }}>
-             ....
+           Bromeliad ternyata mampu menghilangkan lebih dari 80% dari enam senyawa organik yang berbahaya!
             </Card.Text>
           </Card.Body>
           </Link>
@@ -193,7 +193,7 @@ const Informasi = () => {
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aglaonema</Card.Title></h3>
            <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+           Aglaonema (disebut juga Aglonema) masih berasal dari suku talas-talasan atau Araceae yang tetap bisa bertahan hidup meskipun mendapat sinar matahari minim.
             </Card.Text>
           </Card.Body>
           </Link>
@@ -205,7 +205,7 @@ const Informasi = () => {
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Monstera Deliciosa</Card.Title></h3>
             <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+            Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
             </Card.Text>
           </Card.Body>
           </Link>
@@ -217,7 +217,7 @@ const Informasi = () => {
           <Card.Body>
            <h3> <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lili Paris (Spider Plant)</Card.Title></h3>
             <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+            Lili Paris atau yang seringkali disebut chlorophytum ini merupakan sebuah tanaman hias yang dapat berfotosintesis di bawah cahaya matahari yang lemah dan juga meny
             </Card.Text>
           </Card.Body>
           </Link>
@@ -233,7 +233,7 @@ const Informasi = () => {
           padding: '0 35px',
         }}>
           <h4 style={{ color: '#ffff', fontWeight: 'bold', }}>
-            Video Tuturial
+            Video Tutorial
           </h4>
         </div>
       </Container>
