@@ -103,6 +103,10 @@ const HomePage = () => {
               3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K). <br />
               4. Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. <br />
               5. Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</p>
+              <ol type='1'>
+                <li> Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat.</li>
+                <li>Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. </li>
+              </ol>
           </Col>
         </Row>
       </Container>
