@@ -19,9 +19,12 @@ import Bromeila from './page/Bromeila'
 import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
-
 import KonsultanBudi from './page/KonsultanBudi'
 
+import Video1 from './page/Video1'
+import Video2 from './page/Video2'
+import Video3 from './page/Video3'
+import Video4 from './page/Video4'
 
 import NavbarComponent from './components/NavbarComponent'
 import FooterComponent from './components/FooterComponent'
@@ -40,7 +43,7 @@ function App() {
     <div>
       {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
       {!excludePaths.includes(window.location.pathname) && <NavbarComponent />}
-        
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="Login" element={<Login />} />
@@ -54,17 +57,15 @@ function App() {
         <Route path="Aglaonema" element={<Aglaonema />} />
         <Route path="Aloevera" element={<Aloevera />} />
         <Route path="Sirihgading" element={<Sirihgading />} />
-        <Route path="Bromeilad" element={<Bromeila />} />
+        <Route path="Bromeila" element={<Bromeila />} />
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
         
-        <Route path="KonsultanBudi" element={<KonsultanBudi />} />
-
       </Routes>
 
       {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
-      {!excludePaths.includes(window.location.pathname) && <FooterComponent />}
+      {!excludePaths.includes(location.pathname) && <FooterComponent />}
     </div>
   );
 }

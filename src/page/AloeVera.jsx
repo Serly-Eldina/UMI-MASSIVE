@@ -8,7 +8,7 @@ const Aloevera = () => {
   return (
     <>
     <Container className=''>
-      <Row className='tips-lidahmertua text-center pt-5'>
+      <Row className='tips-agleonema text-center pt-5'>
         <Col>
           <h2 className='judul'>Cara Merawat Tanaman Hias Aloe Vera</h2>
           <img className='gambarlidah img-fluid pt-4'  src={gambaraloevera} alt='aloevera' />
@@ -32,13 +32,11 @@ const Aloevera = () => {
         <Col className='pt-4 '>
         <h5>Tips & Trick</h5>
         <ol type='1'>
-          <li>Pertama, pastikan agar memilih pot tanaman yang terbuat dari plastik dan memiliki lubang 
-            pada bagian bawahnya supaya air bisa mengalir keluar dengan mudah.</li>
-            <li>Perlu menggunakan tanah atau media tanam yang tidak mudah menyerap air. Sebab Aloe Vera 
-              bisa cepat membusuk jika tanahnya terlalu basah dan lembab.</li>
-              <li>Tanamkan bibit tanaman Aloe Vera ke dalam media tanam dan biarkanlah selama beberapa 
-                waktu supaya ia bisa tumbuh dengan subur.</li>
-              <li>Pastikan juga untuk selalu merawatnya dengan baik sesuai tips yang sudah dijelaskan sebelumnya.</li>
+          <li>Pemilihan wadah atau pot</li>
+            <li>Perhatikan lubang drainase</li>
+              <li>Pilih wadah yang memiliki lubang sama</li>
+              <li>Hindari penggunaan tanah kebun</li>
+              <li>Taburi tanah atau pupuk dengan bubuk hormon supaya tanamannya cepat bertumbuh</li>
         </ol>
         </Col>
       </Row>

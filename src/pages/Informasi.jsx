@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, Card, CardGroup } from 'react-bootstrap';
-
-
 import informasi from '../images/informasi.png'
 import infoapaitu from '../images/infoapaitu.png'
 import tanah1 from '../images/tanah1.png'
 import tanah2 from '../images/tanah2.png'
 import tanah3 from '../images/tanah3.png'
-
 import tips1 from '../images/tips1.png'
 import tips2 from '../images/tips2.png'
 import tips3 from '../images/tips3.png'
@@ -16,7 +13,10 @@ import tips5 from '../images/tips5.png'
 import tips6 from '../images/tips6.png'
 import tips7 from '../images/tips7.png'
 import tips8 from '../images/tips8.png'
-
+import video1 from '../images/video1.png'
+import videoke2 from '../images/videoke2.png'
+import video2 from '../images/video2.png'
+import video4 from '../images/video4.png'
 
 
 
@@ -179,12 +179,12 @@ const Informasi = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4" >
         <Card className="mb-3 mx-4">
-        <Link to="/Bromeilad" className="card-link">
+        <Link to="/Bromeila" className="card-link">
           <Card.Img src={tips5} />
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Bromeilad</Card.Title></h3>
            <Card.Text style={{ textAlign: 'justify' }}>
-             ....
+           Bromeliad ternyata mampu menghilangkan lebih dari 80% dari enam senyawa organik yang berbahaya!
             </Card.Text>
           </Card.Body>
           </Link>
@@ -196,7 +196,7 @@ const Informasi = () => {
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aglaonema</Card.Title></h3>
            <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+           Aglaonema (disebut juga Aglonema) masih berasal dari suku talas-talasan atau Araceae yang tetap bisa bertahan hidup meskipun mendapat sinar matahari minim.
             </Card.Text>
           </Card.Body>
           </Link>
@@ -208,7 +208,7 @@ const Informasi = () => {
           <Card.Body>
             <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Monstera Deliciosa</Card.Title></h3>
             <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+            Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
             </Card.Text>
           </Card.Body>
           </Link>
@@ -220,7 +220,7 @@ const Informasi = () => {
           <Card.Body>
            <h3> <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lili Paris (Spider Plant)</Card.Title></h3>
             <Card.Text style={{ textAlign: 'justify' }}>
-              ...
+            Lili Paris atau yang seringkali disebut chlorophytum ini merupakan sebuah tanaman hias yang dapat berfotosintesis di bawah cahaya matahari yang lemah dan juga meny
             </Card.Text>
           </Card.Body>
           </Link>
@@ -236,56 +236,59 @@ const Informasi = () => {
           padding: '0 35px',
         }}>
           <h4 style={{ color: '#ffff', fontWeight: 'bold', }}>
-            Video Tuturial
+            Video Tutorial
           </h4>
         </div>
       </Container>
 
 
+
       <CardGroup className="mx-5 px-4 mb-4 pb-4" >
+
         <Card className="mb-3 mx-4">
-        <Card.Img src={tips1} />
+        <Link to="/Video1" className="card-link">
+        <Card.Img src={video1} />
           <Card.Body>
-            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Lidah Mertua</Card.Title></h3>
-            <Card.Text style={{ textAlign: 'justify' }}>
-              Tanaman lidah mertua dikenal juga dengan sebutan Sansevieria. Bentuknya berupa daun panjang
-              dan runcing degan tekstur tebal dan keras. lidah mertua juga mampu menyerap karbon monoksida
-              dan karbon dioksida
+          <Card.Text>
+            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>12 cara merawat tanaman hias daun dan bunga</h7>
             </Card.Text>
           </Card.Body>
+          </Link>
         </Card>
 
         <Card className="mb-3 mx-4">
-          <Card.Img src={tips2} />
+        <Link to="/Video2" className="card-link">
+          <Card.Img src={videoke2} />
           <Card.Body>
-            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Sirih Gading</Card.Title></h3>
-            <Card.Text style={{ textAlign: 'justify' }}>
-              Sirih gading termasuk tanaman hias dalam ruangan yang sangat mudah dirawat.Tanaman hias dalam
-              ruangan ini bisa tumbuh dengan baik ketika ditanam melalui media tanah maupun air.
+            <Card.Text>
+            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Cara Memperbanyak Monstera Variegata</h7>
             </Card.Text>
           </Card.Body>
+          </Link>
         </Card>
 
         <Card className="mb-3 mx-4">
-          <Card.Img src={tips3} />
+        <Link to="/Video3" className="card-link">
+          <Card.Img src={video2} />
           <Card.Body>
-            <h3><Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Peace Lily</Card.Title></h3>
-            <Card.Text style={{ textAlign: 'justify' }}>
-              Tanaman hias lili perdamaian juga termasuk salah satu tanaman yang cocok di dalam ruangan
-              karena mampu menyerap polutan dengan baik.
+            <Card.Text>
+            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Cara menanam tanaman janda bolong agar subur</h7>
             </Card.Text>
           </Card.Body>
+          </Link>
         </Card>
+        
         <Card className="mb-3 mx-4">
-          <Card.Img src={tips4} />
+        <Link to="/Video4" className="card-link">
+          <Card.Img src={video4} />
           <Card.Body>
-           <h3> <Card.Title className="text-center" style={{ color: '#34745C', fontWeight: 'bold' }}>Aloe Vera</Card.Title></h3>
-            <Card.Text style={{ textAlign: 'justify' }}>
-              Aloe vera atau lidah buaya dapat tumbuh subur di dalam ruangan. Tanaman ini juga menyukai
-              cahaya matahari yang tidak langsung, jadi memang baik untuk diletakkan di teras atau dalam ruangan.
+         <Card.Text>
+            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Tips Merawat Tanaman Hias Bagi Pemula</h7>
             </Card.Text>
           </Card.Body>
+          </Link>
         </Card>
+
       </CardGroup>
     </>
   )

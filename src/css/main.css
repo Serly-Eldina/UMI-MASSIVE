@@ -19,6 +19,7 @@ h3{
 h4{
   color: #080707;
   font-weight: 500;
+  padding-top: 0.5rem;
 }
 h5{
   color: #044F1E;
@@ -69,5 +70,6 @@ fotter 34745C */
 }
 
 .card-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #34745C;
 }
