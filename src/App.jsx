@@ -19,7 +19,7 @@ import Bromeila from './page/Bromeila'
 import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
-import Video from './page/Video'
+import Video1 from './page/Video1'
 
 
 import NavbarComponent from './components/NavbarComponent'
@@ -53,11 +53,11 @@ function App() {
         <Route path="Aglaonema" element={<Aglaonema />} />
         <Route path="Aloevera" element={<Aloevera />} />
         <Route path="Sirihgading" element={<Sirihgading />} />
-        <Route path="Bromeilad" element={<Bromeila />} />
+        <Route path="Bromeila" element={<Bromeila />} />
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
-        <Route path="Video1" element={<Video />} />
+        <Route path="Video1" element={<Video1 />} />
         
         
       </Routes>
