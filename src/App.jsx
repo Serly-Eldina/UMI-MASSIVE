@@ -61,6 +61,11 @@ function App() {
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
+        <Route path="KonsultanBudi" element={<KonsultanBudi />} />
+        <Route path="video1" element={<Video1 />} />
+        <Route path="video2" element={<Video2 />} />
+        <Route path="video3" element={<Video3 />} />
+        <Route path="video4" element={<Video4 />} />
         
       </Routes>
 
