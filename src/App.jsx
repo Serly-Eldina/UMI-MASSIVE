@@ -20,6 +20,11 @@ import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
 import Video1 from './page/Video1'
+import Video2 from './page/Video2'
+import Video3 from './page/Video3'
+import Video4 from './page/Video4'
+
+
 
 
 import NavbarComponent from './components/NavbarComponent'
@@ -58,6 +63,9 @@ function App() {
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
         <Route path="Video1" element={<Video1 />} />
+        <Route path="Video2" element={<Video2 />} />
+        <Route path="Video3" element={<Video3 />} />
+        <Route path="Video4" element={<Video4 />} />
         
         
       </Routes>
