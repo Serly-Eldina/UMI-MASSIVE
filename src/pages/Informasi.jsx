@@ -242,6 +242,7 @@ const Informasi = () => {
       </Container>
 
 
+
       <CardGroup className="mx-5 px-4 mb-4 pb-4" >
         <Card className="mb-3 mx-4">
         <Card.Img src={tips1} />
