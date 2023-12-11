@@ -98,14 +98,12 @@ const HomePage = () => {
 
           <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center pt-5'>
             <h2>Penuhi Nutrisi tanaman anda dengan baik</h2> <br />
-            <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat. <br />
-              2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. <br />
-              3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K). <br />
-              4. Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. <br />
-              5. Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</p>
               <ol type='1'>
                 <li> Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat.</li>
+                <li>Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya.</li>
+                <li>Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K).</li>
                 <li>Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. </li>
+                <li>Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</li>
               </ol>
           </Col>
         </Row>
@@ -117,9 +115,11 @@ const HomePage = () => {
 
           <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center'>
             <h2>Bergabung bersama kami untuk merawat tanaman anda</h2> <br />
-            <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.<br />
-              2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  <br />
-              3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
+            <ol type='1'>
+              <li>Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.</li>
+              <li>Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.</li>
+              <li>Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</li>
+            </ol>
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center px-2' >
             <Image src={homegabung} style={{ width: "80%", height: "80%" }}
