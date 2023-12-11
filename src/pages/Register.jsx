@@ -1,20 +1,35 @@
-
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
-import googlelogo from '../images/googlelogo.png'
-
+import googlelogo from '../images/googlelogo.png';
+import axios from 'axios';
 
 const Register = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    // Perform login validation or send data to the server here
-    console.log('Email:', email);
-    console.log('Password:', password);
+
+    try {
+      const response = await axios.post('http://localhost:5173/register', {
+        name,
+        email,
+        password,
+      });
+
+      if (response.data.success) {
+        console.log('Registration successful');
+        // Implement redirection or any other logic for successful registration
+      } else {
+        console.log('Registration failed:', response.data.message);
+        // Implement logic to handle failed registration (e.g., show error message)
+      }
+    } catch (error) {
+      console.error('Registration error:', error.message);
+    }
   };
 
   useEffect(() => {
@@ -48,13 +63,15 @@ const Register = () => {
   return (
     <Container className="login-container d-flex flex-column align-items-center justify-content-center mt-5">
       <Row className="login-content align-items-center mb-5">
-        {/* Login Form on the Left */}
-        <Col className="login-form d-flex flex-column align-items-center justify-content-center"
-        style={{
-          borderRadius: '10px',
-          boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-          height: '550px',
-        }}>
+        {/* Register Form on the Left */}
+        <Col
+          className="login-form d-flex flex-column align-items-center justify-content-center"
+          style={{
+            borderRadius: '10px',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+            height: '550px',
+          }}
+        >
           <img
             src={logologin}
             alt="Login Image"
@@ -67,22 +84,22 @@ const Register = () => {
             <Button
               variant="outline-danger"
               onClick={handleGoogleLogin}
-              className="mb-3 d-flex align-items-center google-login-button">
-              <img className='mx-2' style={{height:'25px', width:'25px'}}
-                src={googlelogo}/>
+              className="mb-3 d-flex align-items-center google-login-button"
+            >
+              <img className="mx-2" style={{ height: '25px', width: '25px' }} src={googlelogo} />
               Sign up with Google
             </Button>
           </div>
           <div className="text-center">
             <p>atau</p>
           </div>
-          <Form onSubmit={handleLogin}>
-            <Form.Group className="text-start mb-3" controlId="formBasicEmail">
+          <Form onSubmit={handleRegister}>
+            <Form.Group className="text-start mb-3" controlId="formBasicName">
               <Form.Control
-                type="name"
+                type="text"
                 placeholder="Nama Lengkap"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
@@ -109,31 +126,34 @@ const Register = () => {
                 display: 'block',
                 margin: 'auto',
                 height: '35px',
-                width:'220px'
-                }}>
+                width: '220px',
+              }}
+            >
               Sign Up
             </Button>
             {/* Register below the login button */}
             <p className="mt-3 text-center mb-5">
-              Sudah Punya Akun? <a href="#" style={{color:'#34745C'}}>Masuk</a>
+              Sudah Punya Akun? <a href="#" style={{ color: '#34745C' }}>
+                Masuk
+              </a>
             </p>
           </Form>
         </Col>
         {/* Image on the Right */}
-        <Col className="image-login" >
+        <Col className="image-login">
           <img
             src={fotologin}
             alt="Login Image"
             className="img-fluid "
-            style={{width:'450px',
-            borderRadius: '10px',
-          }}/>
+            style={{
+              width: '450px',
+              borderRadius: '10px',
+            }}
+          />
         </Col>
       </Row>
     </Container>
   );
 };
 
-
-
-export default Register
+export default Register;
