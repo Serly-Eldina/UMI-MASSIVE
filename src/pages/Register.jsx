@@ -19,8 +19,11 @@ const Register = () => {
   const navigate = useNavigate();
   const [errors, setErrors] = useState({})
   const handleInput = (event) => {
-    setValues(prev => ({ ...prev, [event.target.name]: event.target.value }))
-  }
+    // Clear the error message for the corresponding field
+    setErrors((prevErrors) => ({ ...prevErrors, [event.target.name]: '' }));
+    setValues((prev) => ({ ...prev, [event.target.name]: event.target.value }));
+};
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrors(validation(values));
