@@ -1,60 +1,61 @@
 
-import { useState, useEffect } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { useState, } from 'react';
+import { Container, Row, Col, Form, Button, } from 'react-bootstrap';
 import fotologin from '../images/fotologin.png';
 import logologin from '../images/logologin.png';
 import googlelogo from '../images/googlelogo.png'
 
+import Validation from './LoginValidation';
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // Perform login validation or send data to the server here
-    console.log('Email:', email);
-    console.log('Password:', password);
+const Login = () => {
+  const [values, setValues] = useState({
+    email: '',
+    password: ''
+  })
+  const navigate = useNavigate();
+  const [errors, setErrors] = useState({})
+  const handleInput = (event) => {
+    setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
   };
-
-  useEffect(() => {
-    // Load the Google API for sign-in
-    const script = document.createElement('script');
-    script.src = 'https://apis.google.com/js/platform.js';
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
-
-    script.onload = () => {
-      window.gapi.load('auth2', () => {
-        window.gapi.auth2.init({
-          client_id: 'YOUR_GOOGLE_CLIENT_ID',
-        });
-      });
-    };
-  }, []);
-
-  const handleGoogleLogin = () => {
-    const auth2 = window.gapi.auth2.getAuthInstance();
-    auth2.signIn().then((googleUser) => {
-      const profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId());
-      console.log('Name: ' + profile.getName());
-      console.log('Email: ' + profile.getEmail());
-      console.log('Image URL: ' + profile.getImageUrl());
-    });
+  
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setErrors(Validation(values));
+    const hasErrors = Object.values(errors).some(error => error !== "");
+  
+    if (!hasErrors) {
+      console.log('Submitting values:', values); // Tambahkan baris ini untuk log values
+      axios.post('http://localhost:8001/Login', {
+        email: values.email,
+        password: values.password,
+      })
+      .then(res => {
+        if (res.data === "Success") {
+          navigate('/');
+        } else {
+          alert("Tidak ada catatan yang ada");
+        }
+      })
+      .catch(err => console.log(err));
+    }
   };
+  
+  
+  
 
   return (
     <Container className="login-container d-flex flex-column align-items-center justify-content-center mt-5">
       <Row className="login-content align-items-center mb-5">
         {/* Login Form on the Left */}
         <Col className="login-form d-flex flex-column align-items-center justify-content-center"
-        style={{
-          borderRadius: '10px',
-          boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-          height: '550px',
-        }}>
+          style={{
+            borderRadius: '10px',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+            height: '550px',
+          }}>
           <img
             src={logologin}
             alt="Login Image"
@@ -66,35 +67,35 @@ const Register = () => {
           <div className="d-flex justify-content-center mb-3">
             <Button
               variant="outline-danger"
-              onClick={handleGoogleLogin}
+
               className="mb-3 d-flex align-items-center google-login-button">
-              <img className='mx-2' style={{height:'25px', width:'25px'}}
-                src={googlelogo}/>
+              <img className='mx-2' style={{ height: '25px', width: '25px' }}
+                src={googlelogo} />
               Login in with Google
             </Button>
           </div>
           <div className="text-center">
             <p>atau</p>
           </div>
-          <Form onSubmit={handleLogin}>
+          <Form action='' onSubmit={handleSubmit}>
             <Form.Group className="text-start mb-3" controlId="formBasicEmail">
               <Form.Control
                 type="email"
+                name="email"
                 placeholder="Alamat email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+                onChange={handleInput} />
+              {errors.email && <span className='text-danger'>{errors.email}</span>}
             </Form.Group>
             <Form.Group className="text-start mb-3" controlId="formBasicPassword">
               <Form.Control
                 type="password"
+                name="password"
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
+                onChange={handleInput} />
+              {errors.password && <span className='text-danger'>{errors.password}</span>}
             </Form.Group>
             <p className="text-end mt-2" style={{ fontSize: '0.8rem' }}>
-              <a href="#" style={{color:'#34745C'}}>Forgot Password?</a>
+              <a href="#" style={{ color: '#34745C' }}>Forgot Password?</a>
             </p>
             <Button
               variant="secondary"
@@ -104,14 +105,16 @@ const Register = () => {
                 display: 'block',
                 margin: 'auto',
                 height: '35px',
-                width:'220px'
-                }}>
+                width: '220px'
+              }}>
               Login
             </Button>
             {/* Register below the login button */}
+
             <p className="mt-3 text-center mb-5">
-              Sudah Punya Akun? <a href="#" style={{color:'#34745C'}}>Masuk</a>
+              Belumpunya Akun <a href="/Register" style={{ color: '#34745C' }}>Buat Akun</a>
             </p>
+
           </Form>
         </Col>
         {/* Image on the Right */}
@@ -120,9 +123,10 @@ const Register = () => {
             src={fotologin}
             alt="Login Image"
             className="img-fluid "
-            style={{width:'450px',
-            borderRadius: '10px',
-          }}/>
+            style={{
+              width: '450px',
+              borderRadius: '10px',
+            }} />
         </Col>
       </Row>
     </Container>
@@ -131,4 +135,4 @@ const Register = () => {
 
 
 
-export default Register
+export default Login
