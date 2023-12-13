@@ -133,7 +133,7 @@ const Informasi = () => {
         dan runcing degan tekstur tebal dan keras. Lidah mertua juga mampu menyerap karbon monoksida
         dan karbon dioksida
       </Card.Text>
-    </Card.Body>
+    </Card.Body> 
   </Link>
         </Card>
 
