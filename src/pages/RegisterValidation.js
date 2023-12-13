@@ -12,20 +12,19 @@ function validation(values) {
         error.name = ""
     }
 
-    if(values.email ===""){
-        error.email = "Name shouldnot br empety"
-    }
-    else if (!email_pattern.test(values.email)){
-        error.email = "Email Didn't match"
-    }else {
-        error.email = ""
+    if (values.email === "") {
+        error.email = "Email tidak boleh kosong";
+    } else if (!email_pattern.test(values.email)) {
+        error.email = "Format email tidak valid";
+    } else {
+        error.email = "";
     }
 
     if(values.password === ""){
-        error.password = "password shouldnot br empety"
+        error.password = "pasword tidak boleh kosong"
     }
     else if(!password_pattern.test(values.password)){
-        error.password = "Password Didn't match"
+        error.password = "Format password tidak valid"
     }else{
         error.password =""
     }

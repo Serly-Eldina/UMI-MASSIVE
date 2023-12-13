@@ -31,7 +31,7 @@ const Register = () => {
  
     if (!hasErrors) {
        axios.post('http://localhost:8001/Register', { ...values })
-          .then(res => {
+          .then(() => {
              navigate('/Login');
           })
           .catch(err => console.log(err));

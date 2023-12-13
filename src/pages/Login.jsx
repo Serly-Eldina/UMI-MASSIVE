@@ -17,7 +17,6 @@ const Login = () => {
   const navigate = useNavigate();
   const [errors, setErrors] = useState({})
   const handleInput = (event) => {
-    // Clear the error message for the corresponding field
     setErrors((prevErrors) => ({ ...prevErrors, [event.target.name]: '' }));
     setValues((prev) => ({ ...prev, [event.target.name]: event.target.value }));
 };
@@ -29,7 +28,7 @@ const Login = () => {
     const hasErrors = Object.values(errors).some(error => error !== "");
   
     if (!hasErrors) {
-      console.log('Submitting values:', values); // Tambahkan baris ini untuk log values
+      console.log('Submitting values:', values); 
       axios.post('http://localhost:8001/Login', {
         email: values.email,
         password: values.password,
@@ -38,7 +37,7 @@ const Login = () => {
         if (res.data === "Success") {
           navigate('/');
         } else {
-          alert("Tidak ada catatan yang ada");
+          alert("email dan password tidak tersedia");
         }
       })
       .catch(err => console.log(err));

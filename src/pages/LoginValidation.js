@@ -14,7 +14,7 @@ function validation(values) {
     if (values.password === "") {
         errors.password = "Password tidak boleh kosong";
     } else if (!password_pattern.test(values.password)) {
-        errors.password = "Password harus memiliki setidaknya 8 karakter, 1 huruf besar, 1 huruf kecil, dan 1 digit";
+        errors.password = "Format pasword tidak valid";
     } else {
         errors.password = "";
     }
