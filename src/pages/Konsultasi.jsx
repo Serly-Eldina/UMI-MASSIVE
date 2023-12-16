@@ -6,7 +6,8 @@ import Pakar1 from '../images/pakar1.png';
 import Pakar2 from '../images/pakar2.png';
 import Pakar3 from '../images/pakar3.png';
 import Start from '../images/start.png';
-
+import imagebudi from '../images/konsulbudi.jpeg'
+import imagekarin from '../images/konsulkarin.jpeg'
 const Konsultasi = () => {
   return (
     <>
@@ -42,7 +43,8 @@ const Konsultasi = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4">
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
-          <Card.Img variant="top" src={Pakar1} />
+        <Card.Img variant="top" src={imagebudi}/>
+
             <Card.Title>Budi Gunawan</Card.Title>
             <Card.Text >
                 Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
@@ -57,7 +59,7 @@ const Konsultasi = () => {
 
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
-          <Card.Img variant="top" src={Pakar2} />
+        <Card.Img variant="top" src={imagekarin}/>
         
             <Card.Title>Karin Marina</Card.Title>
             <Card.Text>

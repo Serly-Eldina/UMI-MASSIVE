@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
-import imagebudi from '../images/imagebudi.png'
+import imagebudi from '../images/konsulbudi.jpeg'
 import ratingbudi from '../images/Ratingbudi.png'
 
 const KonsultanBudi = () => {
@@ -18,7 +18,7 @@ const KonsultanBudi = () => {
                     <Container>
                         <Row>
                             <Col>
-                            <img className='imagebudi' src={imagebudi} alt='imagebudi' />
+                            <img className='konsulbudi' src={imagebudi} alt='konsulbudi' />
 
                             <h3 style={{marginBlock: 30,}}>Biografi</h3>
                             <p style={{marginBottom: 50,}}>Budi Gunawan, pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni hidup. Keberhasilannya tidak hanya terletak pada bisnisnya yang sukses, tetapi juga pada cara ia menginspirasi orang untuk menciptakan kebahagiaan melalui keindahan alam di sekitarnya.</p>
@@ -35,7 +35,7 @@ const KonsultanBudi = () => {
                                 }}/>
 
                                 <div style={{marginBlock:20}}>
-                                    <h4><b>Rp. 10.000 - Rp. 15.000</b></h4>
+                                    <h4><b>Rp. 10.000 - Rp. 15.000/2x </b></h4>
                                 
                                     <p>*Diskon 10% sampai dengan akhir bulan*</p>
                                 </div>
@@ -45,8 +45,9 @@ const KonsultanBudi = () => {
                                     height: "3px",
                                     border: "none",
                                     marginBlock:20
-                                }}/><Button variant="success">Mulai Chat</Button>{' '}
-
+                                }}/>
+                               
+                                <Button variant="success" onClick={() => window.open('https://wa.me/6282289050368', '_blank')}>Mulai Chat</Button>
 
 
                             </Col>
