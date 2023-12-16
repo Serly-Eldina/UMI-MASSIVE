@@ -69,7 +69,7 @@ const Konsultasi = () => {
               Rp10.000
             </Card.Text>
             <Card.Body className="text-end">
-            <Button variant="success">Chat</Button>
+            <Button variant="success" href="/konsulkarin">Chat</Button>
           </Card.Body>
         </Card>
 
