@@ -1,11 +1,10 @@
-import React from 'react';
+
 import { Container, Row, Col, Button, Image, Card, CardGroup } from 'react-bootstrap';
 
 import konsultasi from '../images/konsultasi.png';
-import Pakar1 from '../images/pakar1.png';
-import Pakar2 from '../images/pakar2.png';
+
 import Pakar3 from '../images/pakar3.png';
-import Start from '../images/start.png';
+
 import imagebudi from '../images/konsulbudi.jpeg'
 import imagekarin from '../images/konsulkarin.jpeg'
 const Konsultasi = () => {

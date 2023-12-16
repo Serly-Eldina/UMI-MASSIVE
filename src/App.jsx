@@ -20,7 +20,7 @@ import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
 import KonsultanBudi from './page/KonsultanBudi'
-import konsulkarin from './page/konsulkarin'
+import Konsulkarin from './page/konsulkarin'
 import Video1 from './page/Video1'
 import Video2 from './page/Video2'
 import Video3 from './page/Video3'
@@ -62,7 +62,7 @@ function App() {
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
         <Route path="KonsultanBudi" element={<KonsultanBudi />} />
-        <Route path="konsulkarin" element={<konsulkarin />} />
+        <Route path="konsulkarin" element={<Konsulkarin />} />
         <Route path="video1" element={<Video1 />} />
         <Route path="video2" element={<Video2 />} />
         <Route path="video3" element={<Video3 />} />
