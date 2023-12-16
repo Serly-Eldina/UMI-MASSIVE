@@ -3,10 +3,10 @@ import { Container, Row, Col, Button, Image, Card, CardGroup } from 'react-boots
 
 import konsultasi from '../images/konsultasi.png';
 
-import Pakar3 from '../images/pakar3.png';
 
 import imagebudi from '../images/konsulbudi.jpeg'
 import imagekarin from '../images/konsulkarin.jpeg'
+import imagedewi from '../images/konsuldewi.jpeg';
 const Konsultasi = () => {
   return (
     <>
@@ -73,7 +73,7 @@ const Konsultasi = () => {
         </Card>
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
-          <Card.Img variant="top" src={Pakar3} />
+          <Card.Img variant="top" src={imagedewi} />
             <Card.Title>Dewi Santika</Card.Title>
             <Card.Text>
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
@@ -82,7 +82,7 @@ const Konsultasi = () => {
               Rp10.000
             </Card.Text>
             <Card.Body className="text-end">
-            <Button variant="success">Chat</Button>
+            <Button variant="success" href="/konsuldewi">Chat</Button>
           </Card.Body>
         </Card>
       </CardGroup>
