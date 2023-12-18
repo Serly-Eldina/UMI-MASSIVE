@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Admin from './admin'; // Path relatif dari App.jsx ke Admin.jsx
+import Admin from './admin'; 
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Admin /> 
-      {/* Menampilkan komponen Admin untuk menampilkan data dari backend */}
     </div>
   );
 }

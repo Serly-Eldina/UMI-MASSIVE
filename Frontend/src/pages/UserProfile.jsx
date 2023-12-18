@@ -17,7 +17,7 @@ function UserProfile() {
 
   const fetchUserProfile = async () => {
     try {
-      const userId = 15; // Ganti dengan ID pengguna yang sedang masuk
+      const userId = 37; // Ganti dengan ID pengguna yang sedang masuk
       const response = await axios.get(`http://localhost:8001/getUserProfile/${userId}`);
       setUserData(response.data);
     } catch (error) {
