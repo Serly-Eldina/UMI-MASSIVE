@@ -17,6 +17,7 @@ function UserProfile() {
   const [modifiedUserData, setModifiedUserData] = useState({});
   const [originalUserData, setOriginalUserData] = useState({});
 
+
   useEffect(() => {
     const fetchData = async () => {
       await checkLoginStatus();
@@ -63,7 +64,13 @@ function UserProfile() {
     }));
   };
 
+  const [showLogoutConfirmationModal, setShowLogoutConfirmationModal] = useState(false);
+
   const handleLogout = async () => {
+    setShowLogoutConfirmationModal(true);
+  };
+
+  const handleLogoutConfirmed = async () => {
     try {
       await axios.post('http://localhost:8001/logout', {
         email: localStorage.getItem('loggedInUserEmail'),
@@ -75,6 +82,11 @@ function UserProfile() {
       console.error('Error during logout:', error);
     }
   };
+
+  const handleLogoutCancel = () => {
+    setShowLogoutConfirmationModal(false);
+  };
+
 
 
   const handleSubmit = async (e) => {
@@ -122,6 +134,7 @@ function UserProfile() {
   };
 
 
+
   return (
     <>
       {loginStatus === 'Success' ? (
@@ -136,6 +149,24 @@ function UserProfile() {
                 <Button className='mx-4 mt-4' id='button-logout' variant="success" onClick={handleLogout}>
                   Logout
                 </Button>
+
+                <Modal show={showLogoutConfirmationModal} onHide={handleLogoutCancel}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Confirmation</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    Are you sure you want to logout?
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleLogoutCancel}>
+                      Cancel
+                    </Button>
+                    <Button variant="success" onClick={handleLogoutConfirmed}>
+                      Logout
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+
               </div>
             </Col>
             <Col className='isi-form pt-5' xs={{ order: 2, span: 12 }} md={{ order: 2, span: 6 }}>
