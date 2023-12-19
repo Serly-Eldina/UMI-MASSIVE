@@ -22,27 +22,30 @@ const Login = () => {
 };
   
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setErrors(Validation(values));
-    const hasErrors = Object.values(errors).some(error => error !== "");
-  
-    if (!hasErrors) {
-      console.log('Submitting values:', values); 
-      axios.post('http://localhost:8001/Login', {
-        email: values.email,
-        password: values.password,
-      })
-      .then(res => {
-        if (res.data === "Success") {
-          navigate('/');
-        } else {
-          alert("email dan password tidak tersedia");
-        }
-      })
-      .catch(err => console.log(err));
-    }
-  };
+const handleSubmit = (event) => {
+  event.preventDefault();
+  setErrors(Validation(values));
+  const hasErrors = Object.values(errors).some(error => error !== "");
+
+  if (!hasErrors) {
+    axios.post('http://localhost:8001/Login', {
+      email: values.email,
+      password: values.password,
+    })
+    .then(res => {
+      if (res.data === "Success") {
+        // Simpan informasi pengguna yang berhasil login di dalam local storage
+        localStorage.setItem('loggedInUserEmail', values.email);
+        localStorage.setItem('loggedInUserData', JSON.stringify(res.data.user));  // Ganti res.data.user sesuai respons server
+        navigate('/');
+      } else {
+        alert("Email dan password tidak cocok");
+      }
+    })
+    
+    .catch(err => console.log(err));
+  }
+};
   
   
   

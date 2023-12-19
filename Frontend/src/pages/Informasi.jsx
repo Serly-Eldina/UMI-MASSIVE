@@ -44,7 +44,7 @@ const Informasi = () => {
 
           <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center'>
             <h1>Apa Itu Tanaman Hias ?</h1> <br />
-           <h6><p>Tanaman hias merupakan tumbuhan yang biasa
+           <p>Tanaman hias merupakan tumbuhan yang biasa
               ditanam orang sebagai hiasan. Umumnya pengertian hiasan adalah hiasan di dalam rumah,
               atau tamantaman umum, karena di ditanam di rumah atau ditanam di taman, otomatis
               ukuran tanam tidak terlalu besar dan rimbun. Pada umumnya tanaman hias dapat di
@@ -52,7 +52,7 @@ const Informasi = () => {
               merupakan tanaman hias dengan bagian bunga yang menarik. Adapun tanaman hias daun
               merupakan tanaman daun yang menarik. Dalam hal ini perlu di ketahui bahwa organ
               daun terdiri dari pelepah, tangkai, dan helaian oleh karena itu tanaman yang
-              mempunyai pelepah menarik.</p></h6> 
+              mempunyai pelepah menarik.</p>
           </Col>
           <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center'  >
             <Image src={infoapaitu} style={{ width: "90%", height: "90%" }}
@@ -250,7 +250,7 @@ const Informasi = () => {
         <Card.Img src={video1} />
           <Card.Body>
           <Card.Text>
-            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>12 cara merawat tanaman hias daun dan bunga</h7>
+            <p style={{fontWeight: 'bold', color: '#044F1E'}}>12 cara merawat tanaman hias daun dan bunga</p>
             </Card.Text>
           </Card.Body>
           </Link>
@@ -261,7 +261,7 @@ const Informasi = () => {
           <Card.Img src={videoke2} />
           <Card.Body>
             <Card.Text>
-            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Cara Memperbanyak Monstera Variegata</h7>
+            <p style={{fontWeight: 'bold', color: '#044F1E'}}>Cara Memperbanyak Monstera Variegata</p>
             </Card.Text>
           </Card.Body>
           </Link>
@@ -272,7 +272,7 @@ const Informasi = () => {
           <Card.Img src={video2} />
           <Card.Body>
             <Card.Text>
-            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Cara menanam tanaman janda bolong agar subur</h7>
+            <p style={{fontWeight: 'bold', color: '#044F1E'}}>Cara menanam tanaman janda bolong agar subur</p>
             </Card.Text>
           </Card.Body>
           </Link>
@@ -283,7 +283,7 @@ const Informasi = () => {
           <Card.Img src={video4} />
           <Card.Body>
          <Card.Text>
-            <h7 style={{fontWeight: 'bold', color: '#044F1E'}}>Tips Merawat Tanaman Hias Bagi Pemula</h7>
+            <p style={{fontWeight: 'bold', color: '#044F1E'}}>Tips Merawat Tanaman Hias Bagi Pemula</p>
             </Card.Text>
           </Card.Body>
           </Link>

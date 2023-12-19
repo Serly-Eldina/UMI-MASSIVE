@@ -66,11 +66,10 @@ fotter 34745C */
 /* di informasi */
 .card-link {
   text-decoration: none;
-  color: inherit; /* Wariskan warna dari parent (biasanya warna teks kartu) */
+  color: inherit; 
 }
 
 .card-link:hover {
   text-decoration: none;
   color: #34745C;
 }
-

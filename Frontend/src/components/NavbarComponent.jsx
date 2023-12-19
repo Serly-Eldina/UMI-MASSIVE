@@ -14,10 +14,10 @@ const NavbarComponent = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav variant="underline" defaultActiveKey="/home" className="navbar-custom mx-auto me-auto me-2 my-2 my-lg-0" navbarScroll>
-              <NavLink to="/" exact className="nav-link" activeClassName="active">Beranda</NavLink>
-              <NavLink to="/tentangkami" className="nav-link" activeClassName="active">Tentang Kami</NavLink>
-              <NavLink to="/informasi" className="nav-link" activeClassName="active">Informasi</NavLink>
-              <NavLink to="/konsultasi" className="nav-link" activeClassName="active">Konsultasi</NavLink>
+              <NavLink to="/" exact="true" className="nav-link" activeclassname="active">Beranda</NavLink>
+              <NavLink to="/tentangkami" className="nav-link" activeclassname="active">Tentang Kami</NavLink>
+              <NavLink to="/informasi" className="nav-link" activeclassname="active">Informasi</NavLink>
+              <NavLink to="/konsultasi" className="nav-link" activeclassname="active">Konsultasi</NavLink>
             </Nav>
             <Form className="d-flex mb-2 mb-lg-0" style={{ marginRight: '20px' }}>
               <Form.Control
