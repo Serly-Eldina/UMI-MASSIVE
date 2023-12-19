@@ -1,13 +1,49 @@
 
-import { Container, Row, Col, Button, Image, Card, CardGroup } from 'react-bootstrap';
-
+import { useState, useEffect } from 'react';
+import { Container, Row, Col, Button, Image, Card, CardGroup, Modal } from 'react-bootstrap';
 import konsultasi from '../images/konsultasi.png';
-
-
-import imagebudi from '../images/konsulbudi.jpeg'
-import imagekarin from '../images/konsulkarin.jpeg'
+import imagebudi from '../images/konsulbudi.jpeg';
+import imagekarin from '../images/konsulkarin.jpeg';
 import imagedewi from '../images/konsuldewi.jpeg';
+import axios from 'axios'; // Import axios untuk melakukan permintaan HTTP
+
 const Konsultasi = () => {
+  const [loginStatus, setLoginStatus] = useState('');
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+  useEffect(() => {
+    // Cek status login saat komponen dimuat
+    checkLoginStatus();
+  }, []);
+
+  const checkLoginStatus = async () => {
+    try {
+      const response = await axios.post('http://localhost:8001/check-login', {
+        email: localStorage.getItem('loggedInUserEmail'),
+      });
+
+      setLoginStatus(response.data);
+    } catch (error) {
+      console.error('Error checking login status:', error);
+    }
+  };
+
+  const handleChatButtonClick = (consultantId) => {
+    // Cek apakah pengguna sudah login
+    if (loginStatus === 'Success') {
+      // Logika untuk memulai obrolan dengan konsultan berdasarkan ID
+      console.log(`Memulai obrolan dengan konsultan ID: ${consultantId}`);
+      // Redirect ke halaman konsultasi spesifik
+      window.location.href = `/konsul${consultantId.charAt(0).toUpperCase() + consultantId.slice(1)}`;
+    } else {
+      // Tampilkan modal notifikasi jika pengguna belum login
+      setShowLoginModal(true);
+    }
+  };
+
+  const handleCloseLoginModal = () => {
+    setShowLoginModal(false);
+  };
   return (
     <>
       <Container fluid className='mt-4 mb-5 pb-5'>
@@ -42,50 +78,82 @@ const Konsultasi = () => {
 
       <CardGroup className="mx-5 px-4 mb-4 pb-4">
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
-        <Card.Img variant="top" src={imagebudi}/>
+          <Card.Img variant="top" src={imagebudi} />
 
-            <Card.Title>Budi Gunawan</Card.Title>
-            <Card.Text >
-                Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
-            </Card.Text>
-            <Card.Text className='text-start' >
-              Rp10.000
-            </Card.Text>
-            <Card.Body className="text-end">
-            <Button variant="success" href="/KonsultanBudi">Chat</Button>
+          <Card.Title>Budi Gunawan</Card.Title>
+          <Card.Text >
+            Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
+          </Card.Text>
+          <Card.Text className='text-start' >
+            Rp10.000
+          </Card.Text>
+          <Card.Body className="text-end">
+
+            <Button
+              variant="success"
+              onClick={() => handleChatButtonClick('budi')}>
+              Chat
+            </Button>
           </Card.Body>
         </Card>
 
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
-        <Card.Img variant="top" src={imagekarin}/>
-        
-            <Card.Title>Karin Marina</Card.Title>
-            <Card.Text>
+          <Card.Img variant="top" src={imagekarin} />
+
+          <Card.Title>Karin Marina</Card.Title>
+          <Card.Text>
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
-            </Card.Text>
-            <Card.Text className='text-start' >
-              Rp10.000
-            </Card.Text>
-            <Card.Body className="text-end">
-            <Button variant="success" href="/konsulkarin">Chat</Button>
+          </Card.Text>
+          <Card.Text className='text-start' >
+            Rp10.000
+          </Card.Text>
+          <Card.Body className="text-end">
+            <Button
+              variant="success"
+              onClick={() => handleChatButtonClick('karin')}>
+              Chat
+            </Button>
           </Card.Body>
         </Card>
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
           <Card.Img variant="top" src={imagedewi} />
-            <Card.Title>Dewi Santika</Card.Title>
-            <Card.Text>
+          <Card.Title>Dewi Santika</Card.Title>
+          <Card.Text>
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
-            </Card.Text>
-            <Card.Text className='text-start' >
-              Rp10.000
-            </Card.Text>
-            <Card.Body className="text-end">
-            <Button variant="success" href="/konsuldewi">Chat</Button>
+          </Card.Text>
+          <Card.Text className='text-start' >
+            Rp10.000
+          </Card.Text>
+          <Card.Body className="text-end">
+            <Button
+              variant="success"
+              onClick={() => handleChatButtonClick('dewi')}>
+              Chat
+            </Button>
           </Card.Body>
         </Card>
       </CardGroup>
+
+
+      {/* Modal untuk tampilan notifikasi jika pengguna belum login */}
+      <Modal show={showLoginModal} onHide={handleCloseLoginModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Notifikasi</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Anda belum login. Silahkan login terlebih dahulu untuk memulai konsultasi.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseLoginModal}>
+            Tutup
+          </Button>
+          <Button variant="primary" href="/Login">
+            Login
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   )
 }

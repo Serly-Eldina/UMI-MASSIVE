@@ -19,7 +19,7 @@ import Bromeila from './page/Bromeila'
 import Liliparis from './page/Liliparis'
 import Monstera from './page/Monstera'
 import Peacelily from './page/Peacelily'
-import KonsultanBudi from './page/KonsultanBudi'
+import KonsulBudi from './page/KonsulBudi'
 import Konsulkarin from './page/konsulkarin'
 import Konsuldewi from './page/konsuldewi'
 import Video1 from './page/Video1'
@@ -62,7 +62,7 @@ function App() {
         <Route path="Liliparis" element={<Liliparis />} />
         <Route path="Monstera" element={<Monstera />} />
         <Route path="Peacelily" element={<Peacelily />} />
-        <Route path="KonsultanBudi" element={<KonsultanBudi />} />
+        <Route path="KonsulBudi" element={<KonsulBudi />} />
         <Route path="konsulkarin" element={<Konsulkarin />} />
         <Route path="Konsuldewi" element={<Konsuldewi />} />
         <Route path="video1" element={<Video1 />} />

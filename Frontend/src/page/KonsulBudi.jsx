@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import imagebudi from '../images/konsulbudi.jpeg'
 import ratingbudi from '../images/Ratingbudi.png'
 
-const KonsultanBudi = () => {
+const KonsulBudi = () => {
     return (
         <>
         <div>
@@ -59,4 +59,4 @@ const KonsultanBudi = () => {
     );
 };
 
-export default KonsultanBudi;
+export default KonsulBudi;

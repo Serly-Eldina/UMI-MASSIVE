@@ -14,8 +14,8 @@ function UserProfile() {
   const [loginStatus, setLoginStatus] = useState('');
 
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
-const [modifiedUserData, setModifiedUserData] = useState({});
-const [originalUserData, setOriginalUserData] = useState({});
+  const [modifiedUserData, setModifiedUserData] = useState({});
+  const [originalUserData, setOriginalUserData] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,7 +42,7 @@ const [originalUserData, setOriginalUserData] = useState({});
     try {
       const userEmail = localStorage.getItem('loggedInUserEmail');
       const response = await axios.get(`http://localhost:8001/getUserProfile/${encodeURIComponent(userEmail)}`);
-    
+
       if (response.data) {
         setUserData(response.data);
         setOriginalUserData(response.data); // Set data lama di sini
@@ -76,10 +76,10 @@ const [originalUserData, setOriginalUserData] = useState({});
     }
   };
 
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Menyimpan data yang akan diubah
     const userEmail = localStorage.getItem('loggedInUserEmail');
     const updatedUserData = {
@@ -87,41 +87,41 @@ const [originalUserData, setOriginalUserData] = useState({});
       email: userData.email,
       password: userData.password,
     };
-  
+
     setModifiedUserData(updatedUserData);
-  
+
     // Menampilkan modal konfirmasi
     setShowConfirmationModal(true);
   };
   const handleSaveConfirmed = async () => {
-  try {
-    const userEmail = localStorage.getItem('loggedInUserEmail');
-    const updatedUserData = {
-      name: userData.name,
-      email: userData.email,
-      password: userData.password,
-    };
-  
-    await axios.post(`http://localhost:8001/updateUserProfile/${encodeURIComponent(userEmail)}`, updatedUserData);
-  
-    console.log('User data updated successfully:', updatedUserData);
-    // Setelah berhasil disimpan, sembunyikan modal dan reset data yang akan diubah
+    try {
+      const userEmail = localStorage.getItem('loggedInUserEmail');
+      const updatedUserData = {
+        name: userData.name,
+        email: userData.email,
+        password: userData.password,
+      };
+
+      await axios.post(`http://localhost:8001/updateUserProfile/${encodeURIComponent(userEmail)}`, updatedUserData);
+
+      console.log('User data updated successfully:', updatedUserData);
+      // Setelah berhasil disimpan, sembunyikan modal dan reset data yang akan diubah
+      setShowConfirmationModal(false);
+      setModifiedUserData({});
+    } catch (error) {
+      console.error('Error updating user profile:', error);
+      // Tambahkan logika untuk menangani kesalahan, misalnya menampilkan pesan kesalahan kepada pengguna
+    }
+  };
+
+  const handleCancel = () => {
+    // Mereset data ke data lama
+    setUserData(originalUserData);
     setShowConfirmationModal(false);
     setModifiedUserData({});
-  } catch (error) {
-    console.error('Error updating user profile:', error);
-    // Tambahkan logika untuk menangani kesalahan, misalnya menampilkan pesan kesalahan kepada pengguna
-  }
-};
+  };
 
-const handleCancel = () => {
-  // Mereset data ke data lama
-  setUserData(originalUserData);
-  setShowConfirmationModal(false);
-  setModifiedUserData({});
-};
-  
-  
+
   return (
     <>
       {loginStatus === 'Success' ? (
@@ -190,21 +190,21 @@ const handleCancel = () => {
         </Container>
       )}
       <Modal show={showConfirmationModal} onHide={() => setShowConfirmationModal(false)}>
-      <Modal.Header closeButton>
-        <Modal.Title>Confirmation</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        Are you sure you want to update your profile?
-      </Modal.Body>
-      <Modal.Footer>
-  <Button variant="secondary" onClick={handleCancel}>
-    Cancel
-  </Button>
-  <Button variant="success" onClick={handleSaveConfirmed}>
-    Save
-  </Button>
-</Modal.Footer>
-    </Modal>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Are you sure you want to update your profile?
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCancel}>
+            Cancel
+          </Button>
+          <Button variant="success" onClick={handleSaveConfirmed}>
+            Save
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
