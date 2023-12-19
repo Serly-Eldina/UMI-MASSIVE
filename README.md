@@ -15,12 +15,29 @@ Before you begin, make sure you have the following software installed:
     ```sh
     git clone https://github.com/Serly-Eldina/UMI-MASSIVE.git
     ```
-2. Masuk ke Admin dan Frontend lalu installl NPM:
+2. Masuk ke Admin install NPM:
     ```sh
     npm install
     ```
-3. Masuk ke Backend lalu Install:
+3. Jalankan APK
+     ```sh
+    npm run dev
+    ```
+4. Masuk ke Backend lalu Install:
     ```sh
     npm i mysql express cors nodemon
     ```
-4.  
+5. Jalankan APK
+     ```sh
+    npm start
+    ```
+6. Masuk ke Frontend install NPM:
+    ```sh
+    npm install
+    ```
+7. Jalankan APK
+     ```sh
+    npm run dev
+    ```
+
+Aplikasi Floria Harusnya Sudah Bisa di jalankan
