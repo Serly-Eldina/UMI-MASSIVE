@@ -15,8 +15,12 @@ Before you begin, make sure you have the following software installed:
     ```sh
     git clone https://github.com/Serly-Eldina/UMI-MASSIVE.git
     ```
-2. Install NPM di admin dan frontend
+2. Masuk ke Admin dan Frontend lalu installl NPM:
     ```sh
     npm install
     ```
-3. 
+3. Masuk ke Backend lalu Install:
+    ```sh
+    npm i mysql express cors nodemon
+    ```
+4.  
