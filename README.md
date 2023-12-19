@@ -15,4 +15,8 @@ Before you begin, make sure you have the following software installed:
     ```sh
     git clone https://github.com/Serly-Eldina/UMI-MASSIVE.git
     ```
-2. 
+2. Install NPM di admin dan frontend
+    ```sh
+    npm install
+    ```
+3. 
