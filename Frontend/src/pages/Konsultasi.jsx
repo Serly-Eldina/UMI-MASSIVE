@@ -71,10 +71,10 @@ const Konsultasi = () => {
       </Container>
 
 
-      <CardGroup className="mx-5 px-4 mb-4 pb-4">
-        <Card style={{ width: '14rem', margin: '0.5rem' }}>
+      <CardGroup className="mx-5 px-4 mb-4 pb-4 ">
+        <Card  style={{ width: '14rem', margin: '0.5rem' }}>
           <Card.Img variant="top" src={imagebudi} />
-
+          <Card.Body >
           <Card.Title>Budi Gunawan</Card.Title>
           <Card.Text >
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
@@ -82,10 +82,9 @@ const Konsultasi = () => {
           <Card.Text className='text-start' >
             Rp10.000
           </Card.Text>
-          <Card.Body className="text-end">
-
             <Button
               variant="success"
+              style={{ position: 'absolute', bottom: '0', right: '0', margin: '1rem' }}
               onClick={() => handleChatButtonClick('budi')}>
               Chat
             </Button>
@@ -95,7 +94,7 @@ const Konsultasi = () => {
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
           <Card.Img variant="top" src={imagekarin} />
-
+          <Card.Body >
           <Card.Title>Karin Marina</Card.Title>
           <Card.Text>
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
@@ -103,9 +102,9 @@ const Konsultasi = () => {
           <Card.Text className='text-start' >
             Rp10.000
           </Card.Text>
-          <Card.Body className="text-end">
             <Button
               variant="success"
+              style={{ position: 'absolute', bottom: '0', right: '0', margin: '1rem' }}
               onClick={() => handleChatButtonClick('karin')}>
               Chat
             </Button>
@@ -114,6 +113,7 @@ const Konsultasi = () => {
 
         <Card style={{ width: '14rem', margin: '0.5rem' }}>
           <Card.Img variant="top" src={imagedewi} />
+          <Card.Body >
           <Card.Title>Dewi Santika</Card.Title>
           <Card.Text>
             Pengusaha tanaman hias berpengalaman dengan usaha 5 tahun, mengubah setiap tanaman menjadi karya seni.
@@ -121,9 +121,9 @@ const Konsultasi = () => {
           <Card.Text className='text-start' >
             Rp10.000
           </Card.Text>
-          <Card.Body className="text-end">
             <Button
               variant="success"
+              style={{ position: 'absolute', bottom: '0', right: '0', margin: '1rem' }}
               onClick={() => handleChatButtonClick('dewi')}>
               Chat
             </Button>
