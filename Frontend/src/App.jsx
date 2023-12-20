@@ -1,4 +1,4 @@
-// app.jsx
+
 import { useEffect } from 'react';
 import { Routes, Route,useLocation } from 'react-router-dom'
 
@@ -32,17 +32,17 @@ import FooterComponent from './components/FooterComponent'
 
 
 function App() {
-  // Membuat array untuk menyimpan path halaman yang tidak memerlukan Navbar dan Footer
+
   const excludePaths = ['/Login', '/Register'];
 
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Setel ulang scroll ke atas ketika komponen dipasang
+    window.scrollTo(0, 0); 
   }, [location.pathname]);
   return (
     <div>
-      {/* Menampilkan Navbar hanya jika path tidak termasuk dalam excludePaths */}
+
       {!excludePaths.includes(window.location.pathname) && <NavbarComponent />}
 
       <Routes>
@@ -72,7 +72,7 @@ function App() {
         
       </Routes>
 
-      {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}
+
       {!excludePaths.includes(location.pathname) && <FooterComponent />}
     </div>
   );

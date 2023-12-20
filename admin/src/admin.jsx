@@ -63,7 +63,7 @@ const Admin = () => {
         <ul>
           <li><a href="user">Data Pengguna</a></li>
           <li><a href="#add-user">Input Data</a></li>
-          {/* Other sidebar items */}
+          
         </ul>
       </div>
       <div className="main-content">

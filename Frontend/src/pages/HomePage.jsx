@@ -11,12 +11,12 @@ import homejanda from '../images/homejandabolong.png';
 import homebuttonwood from '../images/homebuttonwood.png';
 import homepeony from '../images/homepeony.png';
 import homesepatu from '../images/homebungasepatu.png';
-// import user from '../images/user.png'
+
 
 const HomePage = () => {
   return (
     <>
-      {/* header */}
+   
       <div>
       <Container fluid className='mt-4 mb-4'>
         <Row className="justify-content-center align-items-center">
@@ -45,8 +45,7 @@ const HomePage = () => {
         </Row>
       </Container>
       </div>
-      {/* header */}
-      {/* mulai rencana */}
+
       <div>
       <Container className='mt-5 mb-5'>
         <Row className="justify-content-center pt-5">
@@ -86,8 +85,7 @@ const HomePage = () => {
         </Row>
       </Container >
       </div>
-      {/* mulai rencana */}
-      {/* nutrisi */}
+
       <Container fluid className='mt-6 pt-5 px-4 py-5 mb-6'>
         <Row className="justify-content-center align-items-center">
 
@@ -108,8 +106,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      {/* nutrisi */}
-      {/* bergabung */}
+
       <Container fluid className='mt-5 pt-5 px-4 py-5 mb-5'>
         <Row className="justify-content-center align-items-center">
 
@@ -127,9 +124,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      {/* bergabung */}
 
-      {/* artikel */}
       <Container className='mb-4'>
         <h2>Artikel</h2>
       </Container>
@@ -178,7 +173,7 @@ const HomePage = () => {
         </Card.Body>
       </Card>
     </CardGroup>
-        {/* artikel */}
+       
 
     </>
   )

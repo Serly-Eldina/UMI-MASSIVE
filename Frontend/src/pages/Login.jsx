@@ -34,9 +34,8 @@ const handleSubmit = (event) => {
     })
     .then(res => {
       if (res.data === "Success") {
-        // Simpan informasi pengguna yang berhasil login di dalam local storage
         localStorage.setItem('loggedInUserEmail', values.email);
-        localStorage.setItem('loggedInUserData', JSON.stringify(res.data.user));  // Ganti res.data.user sesuai respons server
+        localStorage.setItem('loggedInUserData', JSON.stringify(res.data.user));  
         navigate('/');
       } else {
         alert("Email dan password tidak cocok");
@@ -53,7 +52,6 @@ const handleSubmit = (event) => {
   return (
     <Container className="login-container d-flex flex-column align-items-center justify-content-center mt-5">
       <Row className="login-content align-items-center mb-5">
-        {/* Login Form on the Left */}
         <Col className="login-form d-flex flex-column align-items-center justify-content-center"
           style={{
             borderRadius: '10px',
@@ -67,7 +65,7 @@ const handleSubmit = (event) => {
             className="mb-4 mt-4"
           />
           <h3 className="mb-4">Login in to your Account</h3>
-          {/* Google Login Button */}
+
           <div className="d-flex justify-content-center mb-3">
             <Button
               variant="outline-danger"
@@ -113,7 +111,7 @@ const handleSubmit = (event) => {
               }}>
               Login
             </Button>
-            {/* Register below the login button */}
+
 
             <p className="mt-3 text-center mb-5">
               Belumpunya Akun <a href="/Register" style={{ color: '#34745C' }}>Buat Akun</a>
@@ -121,7 +119,7 @@ const handleSubmit = (event) => {
 
           </Form>
         </Col>
-        {/* Image on the Right */}
+
         <Col className="image-login" >
           <img
             src={fotologin}

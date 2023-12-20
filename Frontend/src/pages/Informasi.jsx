@@ -107,7 +107,7 @@ const Informasi = () => {
           </Col>
         </Row>
       </Container >
-{/* artikel */}
+
       <Container className='mb-5' >
         <div style={{
           backgroundColor: '#34745C',
@@ -227,7 +227,7 @@ const Informasi = () => {
         </Card>
       </CardGroup>
 
-{/* vid yt */}
+
       <Container className='mb-5' >
         <div style={{
           backgroundColor: '#34745C',

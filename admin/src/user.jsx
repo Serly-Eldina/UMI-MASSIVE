@@ -12,13 +12,13 @@ const User = () => {
         setUserData(response.data);
       })
       .catch((error) => {
-        setError(error); // Tangani error di sini
+        setError(error); 
         console.error('Error fetching data:', error);
       });
   }, []);
 
   if (error) {
-    return <div>Error: {error.message}</div>; // Tampilkan pesan error
+    return <div>Error: {error.message}</div>; 
   }
 
   return (

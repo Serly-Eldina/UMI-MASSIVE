@@ -46,18 +46,7 @@ const Monstera = () => {
         </Col>
       </Row>
 
-      {/* <Row >
-        <Col className='pt-4 '>
-        <h5>Hal yang harus diperhatikan :</h5>
-        <ul>
-          <li>Jangan terlalu sering disiram</li>
-          <li>Tempatkan diruangan yang teduh</li>
-          <li>Berikan Pupuk</li>
-          <li>Gunakan Pestisida</li>
-        </ul>
 
-        </Col>
-      </Row> */}
       </Container>
     </>
 

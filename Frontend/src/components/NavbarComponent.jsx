@@ -1,5 +1,5 @@
 import { Navbar, Nav, Button, Container, Form } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom'; // Mengganti Nav.Link dengan NavLink
+import { NavLink } from 'react-router-dom'; 
 import logosementara from '../images/logosementara.png';
 import logonav from '../images/logonav.png';
 

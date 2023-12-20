@@ -15,7 +15,6 @@ const TentangKami = () => {
     return (
         <>
 
-            {/* ini awal image header */}
             <Row>
                 <Col >
                     <Image style={{
@@ -30,9 +29,7 @@ const TentangKami = () => {
                     />
                 </Col>
             </Row>
-            {/* ini akhir image header */}
 
-            {/* ini awal teks tentang kami */}
             <Container fluid className='mt-4 pt-4'>
                 <Row className="justify-content-center align-items-center">
                     <Col md={6} className='text-center'>
@@ -58,20 +55,17 @@ const TentangKami = () => {
                 </Row>
             </Container>
 
-            {/* ini akhir teks tentang kami */}
-
-            {/* ini awalan layanan */}
 
             <Container>
-                <Row className="justify-content-center"> {/* Added justify-content-center class */}
-                    <Col className='mt-4 pt-4 text-center'> {/* Added text-center class for centering text */}
+                <Row className="justify-content-center"> 
+                    <Col className='mt-4 pt-4 text-center'> 
                         <h3>Layanan Yang Anda Dapatkan</h3>
                         <h4>Ikuti Instruksi untuk lebih lanjut</h4>
                     </Col>
                 </Row>
                 <Row className="justify-content-center">
                     <Col sm={4} className='isi1 mt-4 pt-4 d-flex flex-column align-items-center'>
-                        <img src={layanan1} alt="Layanan 1" className="mb-4" /> {/* Added margin-bottom to create space */}
+                        <img src={layanan1} alt="Layanan 1" className="mb-4" /> 
                         <p style={{ textAlign: 'justify' }}>Platform kami menyajikan berbagai informasi berguna melalui artikel,
                             tips, video tutorial, dan panduan praktis dalam format yang mudah dipahami.
                         </p>
@@ -91,8 +85,7 @@ const TentangKami = () => {
                     </Col>
                 </Row>
             </Container >
-            {/* ini akhiran layanan */}
-            {/* persi apk */}
+
             <Container fluid className='mt-4 pt-4'>
                 <Row className="justify-content-center align-items-center">
                     <Col md lg={{ span: 5, offsite: 1 }} className='d-flex align-items-center '>
@@ -119,7 +112,7 @@ const TentangKami = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* persi apk */}
+
 
 
         </>

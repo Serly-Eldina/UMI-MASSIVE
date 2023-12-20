@@ -41,7 +41,7 @@ const Register = () => {
   return (
     <Container className="login-container d-flex flex-column align-items-center justify-content-center mt-5">
       <Row className="login-content align-items-center mb-5">
-        {/* Login Form on the Left */}
+
         <Col className="login-form d-flex flex-column align-items-center justify-content-center"
         style={{
           borderRadius: '10px',
@@ -55,7 +55,7 @@ const Register = () => {
             className="mb-4 mt-4"
           />
           <h3 className="mb-4">Sign up to your Account</h3>
-          {/* Google Login Button */}
+
           <div className="d-flex justify-content-center mb-3">
             <Button
               variant="outline-danger"
@@ -106,13 +106,13 @@ const Register = () => {
                 }}>
               Sign Up
             </Button>
-            {/* Register below the login button */}
+
             <p className="mt-3 text-center mb-5">
               Sudah Punya Akun? <a href="/Login" style={{color:'#34745C'}}>Masuk</a>
             </p>
           </Form>
         </Col>
-        {/* Image on the Right */}
+
         <Col className="image-login" >
           <img
             src={fotologin}

@@ -1,4 +1,4 @@
-// UserProfile.jsx
+
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Form, Modal } from 'react-bootstrap';
@@ -46,7 +46,7 @@ function UserProfile() {
 
       if (response.data) {
         setUserData(response.data);
-        setOriginalUserData(response.data); // Set data lama di sini
+        setOriginalUserData(response.data); 
         console.log('Fetched user data:', response.data);
       } else {
         console.error('Empty user data response');
@@ -92,7 +92,7 @@ function UserProfile() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Menyimpan data yang akan diubah
+
     const userEmail = localStorage.getItem('loggedInUserEmail');
     const updatedUserData = {
       name: userData.name,
@@ -102,7 +102,7 @@ function UserProfile() {
 
     setModifiedUserData(updatedUserData);
 
-    // Menampilkan modal konfirmasi
+
     setShowConfirmationModal(true);
   };
   const handleSaveConfirmed = async () => {
@@ -117,17 +117,14 @@ function UserProfile() {
       await axios.post(`http://localhost:8001/updateUserProfile/${encodeURIComponent(userEmail)}`, updatedUserData);
 
       console.log('User data updated successfully:', updatedUserData);
-      // Setelah berhasil disimpan, sembunyikan modal dan reset data yang akan diubah
       setShowConfirmationModal(false);
       setModifiedUserData({});
     } catch (error) {
       console.error('Error updating user profile:', error);
-      // Tambahkan logika untuk menangani kesalahan, misalnya menampilkan pesan kesalahan kepada pengguna
     }
   };
 
   const handleCancel = () => {
-    // Mereset data ke data lama
     setUserData(originalUserData);
     setShowConfirmationModal(false);
     setModifiedUserData({});
@@ -155,7 +152,7 @@ function UserProfile() {
                     <Modal.Title>Confirmation</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    Are you sure you want to logout?
+                    Apakah Kamu yakin ingin Logout dari akun?
                   </Modal.Body>
                   <Modal.Footer>
                     <Button variant="secondary" onClick={handleLogoutCancel}>
@@ -212,7 +209,7 @@ function UserProfile() {
         <Container className=' mt-5 mb-5'>
           <Row>
             <Col>
-              <h4>Silahkan Login Untuk Mengakses Profil</h4>
+              <h4> Anda belum login. Silahkan login terlebih dahulu untuk meengakses User Profile.</h4>
               <Link to="/Login">
                 <Button type="button" className="btn btn-secondary btn-custom" >Login</Button>
               </Link>
@@ -225,7 +222,7 @@ function UserProfile() {
           <Modal.Title>Confirmation</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Are you sure you want to update your profile?
+          Apa Kamu yakin Ingin mengubah data profile
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCancel}>

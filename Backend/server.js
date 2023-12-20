@@ -44,7 +44,6 @@ app.post('/Login', (req, res) => {
         }
 
         if (data.length > 0) {
-            // Lakukan update ke kolom isLogin = 'isLogin'
             const userId = data[0].id;
             const sqlUpdate = "UPDATE user SET is_login = 'isLogin' WHERE id = ?";
             
@@ -66,9 +65,9 @@ app.post('/Login', (req, res) => {
 
 
 
-// Endpoint untuk cek login status
+
 app.post('/check-login', (req, res) => {
-    const userEmail = req.body.email; // Ganti dengan atribut yang sesuai dengan request dari frontend
+    const userEmail = req.body.email; 
     const sql = "SELECT * FROM user WHERE `email` = ? AND `is_login` = ?";
     
     db.query(sql, [userEmail, 'isLogin'], (err, data) => {
@@ -78,16 +77,14 @@ app.post('/check-login', (req, res) => {
         }
         
         if (data.length > 0) {
-            // Pengguna telah login
             return res.json("Success");
         } else {
-            // Pengguna belum login, arahkan untuk login
             return res.json("Fail");
         }
     });
 });
 
-// Endpoint untuk mengupdate profil pengguna berdasarkan email
+
 app.post('/updateUserProfile/:email', (req, res) => {
     const userEmail = req.params.email;
     const { name, email, password } = req.body;
@@ -105,7 +102,7 @@ app.post('/updateUserProfile/:email', (req, res) => {
     });
 });
 
-// Endpoint untuk logout
+
 app.post('/logout', (req, res) => {
     const userEmail = req.body.email;
     const sqlUpdate = "UPDATE user SET is_login = 'isNotLogin' WHERE email = ?";
@@ -142,7 +139,7 @@ app.get('/getUserProfile/:email', (req, res) => {
             return res.status(500).json({ error: "Internal Server Error" });
         }
         if (data.length > 0) {
-            return res.json(data[0]); // Asumsi hanya satu pengguna yang dikembalikan
+            return res.json(data[0]);
         } else {
             return res.status(404).json({ message: "User profile not found" });
         }
@@ -161,7 +158,7 @@ db.connect((err) => {
  
 
 
-// Endpoint untuk menghapus pengguna berdasarkan ID
+
 app.delete('/deleteUser/:id', (req, res) => {
     const userId = req.params.id;
     const sql = "DELETE FROM user WHERE id = ?";
@@ -184,7 +181,7 @@ app.get('/getUserProfile/:id', (req, res) => {
             return res.status(500).json({ error: "Internal Server Error" });
         }
         if (data.length > 0) {
-            return res.json(data[0]); // Asumsi hanya satu pengguna yang dikembalikan
+            return res.json(data[0]);
         } else {
             return res.status(404).json({ message: "User profile not found" });
         }

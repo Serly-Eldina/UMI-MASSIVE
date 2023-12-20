@@ -5,14 +5,13 @@ import konsultasi from '../images/konsultasi.png';
 import imagebudi from '../images/konsulbudi.jpeg';
 import imagekarin from '../images/konsulkarin.jpeg';
 import imagedewi from '../images/konsuldewi.jpeg';
-import axios from 'axios'; // Import axios untuk melakukan permintaan HTTP
+import axios from 'axios'; 
 
 const Konsultasi = () => {
   const [loginStatus, setLoginStatus] = useState('');
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   useEffect(() => {
-    // Cek status login saat komponen dimuat
     checkLoginStatus();
   }, []);
 
@@ -29,14 +28,10 @@ const Konsultasi = () => {
   };
 
   const handleChatButtonClick = (consultantId) => {
-    // Cek apakah pengguna sudah login
     if (loginStatus === 'Success') {
-      // Logika untuk memulai obrolan dengan konsultan berdasarkan ID
       console.log(`Memulai obrolan dengan konsultan ID: ${consultantId}`);
-      // Redirect ke halaman konsultasi spesifik
       window.location.href = `/konsul${consultantId.charAt(0).toUpperCase() + consultantId.slice(1)}`;
     } else {
-      // Tampilkan modal notifikasi jika pengguna belum login
       setShowLoginModal(true);
     }
   };
@@ -137,7 +132,7 @@ const Konsultasi = () => {
       </CardGroup>
 
 
-      {/* Modal untuk tampilan notifikasi jika pengguna belum login */}
+
       <Modal show={showLoginModal} onHide={handleCloseLoginModal}>
         <Modal.Header closeButton>
           <Modal.Title>Notifikasi</Modal.Title>
@@ -147,15 +142,15 @@ const Konsultasi = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseLoginModal}>
-            Tutup
+            Cancel
           </Button>
-          <Button variant="primary" href="/Login">
+          <Button variant="success" href="/Login">
             Login
           </Button>
         </Modal.Footer>
       </Modal>
     </>
-  )
+  )  
 }
 
 export default Konsultasi;
